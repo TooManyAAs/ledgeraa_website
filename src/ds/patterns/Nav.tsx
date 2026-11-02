@@ -3,7 +3,7 @@ import { ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@ds/primitives";
 import { Logo } from "./Logo";
 import { cn } from "@ds/cn";
-import { NAV_LINKS, SIGNUP_URL } from "@/config/site";
+import { NAV_LINKS, SIGNIN_URL } from "@/config/site";
 
 const links = NAV_LINKS;
 
@@ -14,7 +14,7 @@ const links = NAV_LINKS;
  */
 export function Nav({
   current,
-  ctaHref = SIGNUP_URL,
+  ctaHref = SIGNIN_URL,
 }: {
   /** The current page's path, e.g. "/pricing". Used to underline the active link. */
   current?: string;
