@@ -4,9 +4,14 @@ import { PricingPage } from "./pages/PricingPage";
 import { JoinPage } from "./pages/JoinPage";
 import { ContactPage } from "./pages/ContactPage";
 import { SupportPage } from "./pages/SupportPage";
-import { TermsPage } from "./pages/TermsPage";
-import { CookiesPage } from "./pages/CookiesPage";
-import { PrivacyPage } from "./pages/PrivacyPage";
+import { TermsPage } from "./pages/legal/TermsPage";
+import { CookiesPage } from "./pages/legal/CookiesPage";
+import { PrivacyPage } from "./pages/legal/PrivacyPage";
+import { DataProcessingPage } from "./pages/legal/DataProcessingPage";
+import { SubProcessorsPage } from "./pages/legal/SubProcessorsPage";
+import { SecurityPage } from "./pages/legal/SecurityPage";
+import { AccessibilityPage } from "./pages/legal/AccessibilityPage";
+import { PartnerTermsPage } from "./pages/legal/PartnerTermsPage";
 import { PlaygroundPage } from "./playground/PlaygroundPage";
 import { SectionsPage } from "./playground/SectionsPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
@@ -52,6 +57,11 @@ export function App() {
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/cookies" element={<CookiesPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/data-processing" element={<DataProcessingPage />} />
+        <Route path="/sub-processors" element={<SubProcessorsPage />} />
+        <Route path="/security" element={<SecurityPage />} />
+        <Route path="/accessibility" element={<AccessibilityPage />} />
+        <Route path="/partner-terms" element={<PartnerTermsPage />} />
         {/* Dev-only surfaces: not registered in production builds. */}
         {import.meta.env.DEV && (
           <>

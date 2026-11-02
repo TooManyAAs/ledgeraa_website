@@ -3,9 +3,18 @@
   "siteName": "Ledgeraa",
   "shareImage": "/logo-lockup.png",
   "offers": [
-    { "name": "Free", "price": "0" },
-    { "name": "Standard", "price": "4.99" },
-    { "name": "Unlimited", "price": "7.99" }
+    {
+      "name": "Free",
+      "price": "0"
+    },
+    {
+      "name": "Standard",
+      "price": "4.99"
+    },
+    {
+      "name": "Unlimited",
+      "price": "7.99"
+    }
   ],
   "pages": [
     {
@@ -14,7 +23,10 @@
       "description": "Plain-English bookkeeping and Making Tax Digital app for UK sole traders. Snap receipts, send invoices and submit your MTD updates. Free to start, MTD from £4.99 a month.",
       "changefreq": "weekly",
       "priority": "1.0",
-      "schema": ["organization", "software"]
+      "schema": [
+        "organization",
+        "software"
+      ]
     },
     {
       "path": "/pricing",
@@ -22,7 +34,9 @@
       "description": "Free plan with unlimited invoices. Standard at £4.99 a month adds MTD submissions, receipt scanning and other income.",
       "changefreq": "weekly",
       "priority": "0.9",
-      "schema": ["software"]
+      "schema": [
+        "software"
+      ]
     },
     {
       "path": "/making-tax-digital",
@@ -138,7 +152,7 @@
     },
     {
       "path": "/terms",
-      "title": "Terms & Conditions | Ledgeraa",
+      "title": "Terms of Service | Ledgeraa",
       "description": "The terms that apply when you use Ledgeraa.",
       "changefreq": "yearly",
       "priority": "0.3"
@@ -154,6 +168,41 @@
       "path": "/privacy",
       "title": "Privacy Policy | Ledgeraa",
       "description": "How Ledgeraa collects, stores and protects your data. Your records live in the EU, encrypted, and we never sell them.",
+      "changefreq": "yearly",
+      "priority": "0.3"
+    },
+    {
+      "path": "/data-processing",
+      "title": "Data Processing Agreement | Ledgeraa",
+      "description": "The Article 28 terms on which Ledgeraa processes personal data in your records on your behalf.",
+      "changefreq": "yearly",
+      "priority": "0.3"
+    },
+    {
+      "path": "/sub-processors",
+      "title": "Sub-processors | Ledgeraa",
+      "description": "The service providers Ledgeraa uses to process data, where they are located, and the transfer safeguards.",
+      "changefreq": "yearly",
+      "priority": "0.3"
+    },
+    {
+      "path": "/security",
+      "title": "Security | Ledgeraa",
+      "description": "How Ledgeraa protects your tax identifiers, financial records and HMRC connection, and how to report a vulnerability.",
+      "changefreq": "yearly",
+      "priority": "0.3"
+    },
+    {
+      "path": "/accessibility",
+      "title": "Accessibility Statement | Ledgeraa",
+      "description": "The accessibility standard Ledgeraa aims to meet, where the Service currently falls short, and how to request an adjustment.",
+      "changefreq": "yearly",
+      "priority": "0.3"
+    },
+    {
+      "path": "/partner-terms",
+      "title": "Partner Terms | Ledgeraa",
+      "description": "The terms for accountants and bookkeepers who access client accounts through Ledgeraa.",
       "changefreq": "yearly",
       "priority": "0.3"
     }

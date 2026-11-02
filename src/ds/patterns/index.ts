@@ -39,6 +39,9 @@ export { DataResidency } from "./DataResidency";
 export { CalloutCard } from "./CalloutCard";
 export { CtaBanner } from "./CtaBanner";
 
+// Long-form content
+export { Markdown } from "./Markdown";
+
 // Site chrome
 export { Logo } from "./Logo";
 export { PromoBar } from "./PromoBar";

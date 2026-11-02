@@ -29,9 +29,14 @@ const HELP_LINKS = [
 ];
 
 const LEGAL_LINKS = [
-  { href: "/terms", label: "Terms & Conditions" },
+  { href: "/terms", label: "Terms of Service" },
+  { href: "/privacy", label: "Privacy Policy" },
   { href: "/cookies", label: "Cookie Policy" },
-  { href: "/privacy", label: "Privacy" },
+  { href: "/data-processing", label: "Data Processing Agreement" },
+  { href: "/sub-processors", label: "Sub-processors" },
+  { href: "/security", label: "Security" },
+  { href: "/accessibility", label: "Accessibility" },
+  { href: "/partner-terms", label: "Partner Terms" },
 ];
 
 const linkClass =
@@ -111,6 +116,12 @@ export function Footer() {
               </a>
               <br />
               Your data stays in the EU.
+            </p>
+            {/* Company identification - shown on every page (legal footer). */}
+            <p className="mt-4 text-[12px] leading-relaxed text-[var(--color-neutral-500)]">
+              Ledgeraa LTD is a private limited company registered in England and
+              Wales (company number 17344886). Registered office: 167-169 Great
+              Portland Street, 5th Floor, London, W1W 5PF.
             </p>
           </div>
 
