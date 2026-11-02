@@ -34,10 +34,7 @@ import {
 } from "@ds/primitives";
 import { cn } from "@ds/cn";
 import { SIGNUP_URL, SIGNIN_URL } from "@/config/site";
-import { InvoiceMock } from "@ds/patterns/visuals/InvoiceMock";
-import { OtherIncomeMock } from "@ds/patterns/visuals/OtherIncomeMock";
-import { InfoBoxMock } from "@ds/patterns/visuals/InfoBoxMock";
-import { CsvImportMock } from "@ds/patterns/visuals/CsvImportMock";
+import { DemoMedia } from "@ds/patterns/visuals/DemoMedia";
 import { Seo } from "@/Seo";
 
 const faqs: FaqEntry[] = [
@@ -201,7 +198,12 @@ export function HomePage() {
               "See at a glance what's been paid and what's still owed",
               "Set up repeat invoices and watch them appear automatically",
             ]}
-            visual={<InvoiceMock />}
+            visual={
+              <DemoMedia
+                src="/demo/invoices.mp4"
+                alt="Choosing an invoice template in Ledgeraa"
+              />
+            }
             orientation="left"
             background="white"
           />
@@ -217,9 +219,10 @@ export function HomePage() {
             ]}
             footnote="Always double-check that the captured details match your receipt. Automated scanning can make mistakes."
             visual={
-              <PhoneFrame>
-                <ScreenMock variant="receipt" />
-              </PhoneFrame>
+              <DemoMedia
+                src="/demo/receipt-scanning.mp4"
+                alt="Scanning a receipt and Ledgeraa reading the details"
+              />
             }
             orientation="right"
             background="canvas"
@@ -234,7 +237,12 @@ export function HomePage() {
               "Add the extra expenses you'd otherwise forget",
               "Easy, effortless year-end declarations",
             ]}
-            visual={<OtherIncomeMock />}
+            visual={
+              <DemoMedia
+                src="/demo/other-income.png"
+                alt="Logging other income in Ledgeraa"
+              />
+            }
             orientation="left"
             background="white"
           />
@@ -248,7 +256,12 @@ export function HomePage() {
               "Tells you what each box means and where to find the answer",
               "No accountant-speak, no guessing",
             ]}
-            visual={<InfoBoxMock />}
+            visual={
+              <DemoMedia
+                src="/demo/plain-english-note.png"
+                alt="A plain-English help note under a tax field in Ledgeraa"
+              />
+            }
             orientation="right"
             background="canvas"
           />
@@ -262,7 +275,12 @@ export function HomePage() {
               "Easy matching of your data to our format",
               "Export your Ledgeraa logs any time, in any date range",
             ]}
-            visual={<CsvImportMock />}
+            visual={
+              <DemoMedia
+                src="/demo/import-expenses.png"
+                alt="Importing expenses from a spreadsheet into Ledgeraa"
+              />
+            }
             orientation="left"
             background="white"
           />
@@ -358,9 +376,10 @@ function Hero() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <PhoneFrame tilt>
-              <ScreenMock variant="home" />
-            </PhoneFrame>
+            <DemoMedia
+              src="/demo/dashboard.mp4"
+              alt="Scrolling through the Ledgeraa dashboard"
+            />
           </div>
         </div>
       </Container>
