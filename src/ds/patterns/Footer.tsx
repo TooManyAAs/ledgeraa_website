@@ -163,7 +163,9 @@ export function Footer() {
           submit are your responsibility, and we cannot guarantee their
           accuracy. Any tax estimate in the app is a guide only, so always rely
           on the figure HMRC confirms after you submit. For advice about your
-          own situation, speak to a qualified accountant.
+          own situation, speak to a qualified accountant. All images and videos
+          on this site are for demonstrative purposes only, and your experience
+          may differ.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 border-t border-[var(--color-neutral-200)] pt-6 text-sm text-[var(--color-neutral-500)] sm:flex-row sm:items-center sm:justify-between">

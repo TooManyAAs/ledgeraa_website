@@ -2,8 +2,8 @@ import { cn } from "@ds/cn";
 
 /**
  * DemoMedia - a real screen recording or screenshot of the app, in a clean
- * browser-style frame, with the required "for demo purposes only" disclaimer
- * underneath. Videos autoplay muted on loop; images are plain <img>.
+ * browser-style frame. Videos autoplay muted on loop; images are plain <img>.
+ * The "for demonstrative purposes only" disclaimer lives once in the footer.
  *
  * Replaces the hand-built *Mock components where we have real footage.
  */
@@ -23,7 +23,7 @@ export function DemoMedia({
   const isVideo = /\.(mp4|webm|mov)$/i.test(src);
 
   return (
-    <figure className={cn("m-0 w-full", className)}>
+    <div className={cn("w-full", className)}>
       {/* Browser-style frame: a thin chrome bar + the media. */}
       <div className="overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-[var(--color-neutral-200)]">
         <div className="flex items-center gap-1.5 border-b border-[var(--color-neutral-100)] bg-[var(--color-canvas-soft)] px-3.5 py-2.5">
@@ -47,9 +47,6 @@ export function DemoMedia({
           <img className="block w-full" src={src} alt={alt} loading="lazy" />
         )}
       </div>
-      <figcaption className="mt-3 text-center text-[12px] leading-snug text-[var(--color-neutral-500)]">
-        For demo purposes only. Your experience may differ.
-      </figcaption>
-    </figure>
+    </div>
   );
 }
