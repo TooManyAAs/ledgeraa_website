@@ -1,10 +1,12 @@
 import { Nav, Footer } from "@ds/patterns";
 import { Container, Section, Eyebrow, Heading, Lede } from "@ds/primitives";
+import { Seo } from "@/Seo";
 
 // ponytail: placeholder, full privacy policy lands next.
 export function PrivacyPage() {
   return (
     <>
+      <Seo path="/privacy" />
       <Nav current="/privacy" />
       <main>
         <Section background="paper" spacing="lg">

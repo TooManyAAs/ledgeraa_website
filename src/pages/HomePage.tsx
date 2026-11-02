@@ -38,10 +38,23 @@ import { InvoiceMock } from "@ds/patterns/visuals/InvoiceMock";
 import { OtherIncomeMock } from "@ds/patterns/visuals/OtherIncomeMock";
 import { InfoBoxMock } from "@ds/patterns/visuals/InfoBoxMock";
 import { CsvImportMock } from "@ds/patterns/visuals/CsvImportMock";
+import { Seo } from "@/Seo";
 
 const faqs: FaqEntry[] = [
   {
-    question: "Is Ledgeraa really HMRC-recognised?",
+    question: "Do I need Making Tax Digital, and when?",
+    answer: (
+      <>
+        It depends on your qualifying income: your self-employment and property
+        income added together, before expenses. Over £50,000 in 2024 to 2025
+        meant MTD from April 2026. Over £30,000 in 2025 to 2026 means MTD from
+        April 2027, and over £20,000 in 2026 to 2027 means MTD from April 2028.{" "}
+        <a href="/making-tax-digital/do-i-need-it">Check your start date</a>.
+      </>
+    ),
+  },
+  {
+    question: "Is Ledgeraa HMRC-recognised (or 'HMRC-approved')?",
     answer: (
       <>
         We're in the process of getting there. Ledgeraa is pending inclusion on
@@ -49,6 +62,32 @@ const faqs: FaqEntry[] = [
         software; it doesn't endorse or recommend any one product, so
         "recognised" means exactly that: once we've passed their process, you can
         send your tax straight to them through us.
+      </>
+    ),
+  },
+  {
+    question: "Does Ledgeraa send quarterly updates and the final declaration?",
+    answer: (
+      <>
+        It's designed to, and will do so as soon as we get HMRC recognition.
+      </>
+    ),
+  },
+  {
+    question: "Which income does Ledgeraa cover?",
+    answer: (
+      <>
+        Self-employment, UK property, foreign property, and other income on
+        your return.
+      </>
+    ),
+  },
+  {
+    question: "Can I keep using my spreadsheet?",
+    answer: (
+      <>
+        Yes. Import your Excel or CSV files any time and carry on from there.{" "}
+        <a href="/switch-from-spreadsheets">Here's how switching works</a>.
       </>
     ),
   },
@@ -120,6 +159,7 @@ const faqs: FaqEntry[] = [
 export function HomePage() {
   return (
     <>
+      <Seo path="/" />
       <Nav current="/" />
 
       <main>
@@ -127,47 +167,14 @@ export function HomePage() {
         <TrustStrip />
         <EverythingYouNeed />
 
-        {/* ── Feature walkthrough: six compact features, alternating L/R ── */}
+        {/* ── Feature walkthrough: MTD first (biggest search driver), then
+            five compact features, alternating L/R ── */}
         <div id="features">
-          <FeatureSplit
-            compact
-            eyebrow="Invoices & PDFs"
-            heading="Professional invoices in seconds"
-            lede="Fill in the details, choose a template, and you're ready to send. Your customer gets a clean, professional PDF with your name (and even your logo) on it."
-            bullets={[
-              "Professional PDF templates, ready to print and email",
-              "Every detail easy to fill, all with plain-English explanations",
-              "See at a glance what's been paid and what's still owed",
-              "Set up repeat invoices and watch them appear automatically",
-            ]}
-            visual={<InvoiceMock />}
-            orientation="right"
-            background="canvas"
-          />
-          <FeatureSplit
-            compact
-            eyebrow="Expenses & receipt scanning"
-            heading="You snap the receipt. We do the typing."
-            lede="Whether you've just bought ingredients, materials, or shiny new equipment, all you need is a photo of your receipt. Ledgeraa reads it and fills in the details for you, so every expense is logged and ready for your tax return in seconds."
-            bullets={[
-              "Details captured automatically from a single photo of your receipt",
-              "Just pick the right category and you're ready to submit",
-              "Set recurring expenses once and let them log themselves",
-            ]}
-            footnote="Always double-check that the captured details match your receipt. Automated scanning can make mistakes."
-            visual={
-              <PhoneFrame>
-                <ScreenMock variant="receipt" />
-              </PhoneFrame>
-            }
-            orientation="left"
-            background="white"
-          />
           <div id="mtd">
           <FeatureSplit
             compact
             eyebrow="Making Tax Digital"
-            heading="Don't let digital taxes scare you off doing what you do best."
+            heading="Making Tax Digital for sole traders, guided step by step"
             lede="Making Tax Digital is here, and it can feel daunting. We're here to make sure you don't let digital taxes put you off self-employment. We're (soon) HMRC-recognised and connected, and we guide you through every step. Your updates go straight to HMRC, which means no spreadsheets, no portals, no late-night panic."
             bullets={[
               "HMRC-recognised (coming soon). Your numbers never go to a third party",
@@ -185,8 +192,42 @@ export function HomePage() {
           </div>
           <FeatureSplit
             compact
+            eyebrow="Invoices & PDFs"
+            heading="Unlimited free invoices, customised PDF templates, automated repeats"
+            lede="Fill in the details, choose a template, and you're ready to send. Your customer gets a clean, professional PDF with your name (and even your logo) on it."
+            bullets={[
+              "Professional PDF templates, ready to print and email",
+              "Every detail easy to fill, all with plain-English explanations",
+              "See at a glance what's been paid and what's still owed",
+              "Set up repeat invoices and watch them appear automatically",
+            ]}
+            visual={<InvoiceMock />}
+            orientation="left"
+            background="white"
+          />
+          <FeatureSplit
+            compact
+            eyebrow="Expenses & receipt scanning"
+            heading="Receipt scanning that logs your expenses for you"
+            lede="Whether you've just bought ingredients, materials, or shiny new equipment, all you need is a photo of your receipt. Ledgeraa reads it and fills in the details for you, so every expense is logged and ready for your tax return in seconds."
+            bullets={[
+              "Details captured automatically from a single photo of your receipt",
+              "Just pick the right category and you're ready to submit",
+              "Set recurring expenses once and let them log themselves",
+            ]}
+            footnote="Always double-check that the captured details match your receipt. Automated scanning can make mistakes."
+            visual={
+              <PhoneFrame>
+                <ScreenMock variant="receipt" />
+              </PhoneFrame>
+            }
+            orientation="right"
+            background="canvas"
+          />
+          <FeatureSplit
+            compact
             eyebrow="Real-time income logging"
-            heading="Catch every bit of income, as it happens."
+            heading="Log other income: cash jobs, rent, foreign property, and more"
             lede="Cash job? One-off sale? A little rent on the side? Log “other income” the moment it lands, and year-end stops being a scramble through your memory."
             bullets={[
               "Record “other income” the moment it happens",
@@ -200,7 +241,7 @@ export function HomePage() {
           <FeatureSplit
             compact
             eyebrow="Plain English support"
-            heading="Never wonder what a box means again."
+            heading="Plain-English help on every tax box"
             lede="Tax forms love a confusing label. We do not. Important fields carry a little plain-English note telling you exactly what's expected of you, and where to find it. So you're never stuck, never second-guessing, never Googling a term at 11pm (unless that's your thing)."
             bullets={[
               "Plain-English hints on important fields",
@@ -214,7 +255,7 @@ export function HomePage() {
           <FeatureSplit
             compact
             eyebrow="Easy switching"
-            heading="Already use another bookkeeping tool? Switching is easy."
+            heading="Switch seamlessly from spreadsheets or another app: import Excel and CSV"
             lede="We know there are many options out there, but Ledgeraa is made exclusively for sole traders like you. That's why we made it really easy to switch and bring all your past records to us, free of charge."
             bullets={[
               "Import invoices, sales records, or expenses as Excel or CSV files",
@@ -233,8 +274,7 @@ export function HomePage() {
             <div className="mx-auto max-w-[44rem] text-center">
               <Eyebrow>Pricing</Eyebrow>
               <Heading level="display-md" as="h2" className="mt-5">
-                £4.99/month for everything you need. No increases, no 'special'
-                offers.
+                MTD software for £4.99 a month. Free to start.
               </Heading>
               <Lede className="mt-4" align="center">
                 Three plans tailored to your needs and preferences, no add-ons,
@@ -254,7 +294,7 @@ export function HomePage() {
         <div id="faq">
         <FaqAccordion
           eyebrow="Common questions"
-          heading="Frequently Asked Questions"
+          heading="Making Tax Digital and Ledgeraa: your questions answered"
           items={faqs}
           illustration={
             <Illustration
@@ -284,8 +324,12 @@ function Hero() {
       <Container width="wide">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div>
-            <Eyebrow withDot>Plain English, built for sole traders, not accountants</Eyebrow>
-            <Heading level="display-xl" className="mt-6">
+            {/* The H1 carries the searched-for words; the big tagline keeps
+                its look as a styled <p>. */}
+            <h1 className="m-0">
+              <Eyebrow withDot>Plain-English MTD bookkeeping app for UK sole traders</Eyebrow>
+            </h1>
+            <Heading level="display-xl" as="p" className="mt-6">
               We mind your tax. You mind your business.
             </Heading>
             <Lede className="mt-6">
@@ -362,6 +406,12 @@ function TrustStrip() {
         <div className="flex flex-col items-center gap-4 py-6">
           {renderRow(rowOne)}
           {renderRow(rowTwo)}
+          <a
+            href="/making-tax-digital"
+            className="text-[15px] font-semibold text-[var(--color-primary-700)] underline underline-offset-[3px] decoration-[var(--color-primary-200)] hover:decoration-[var(--color-primary-500)]"
+          >
+            MTD from April 2027 if you earn over £30k
+          </a>
           <p className="mt-1 max-w-[46rem] text-center text-[13px] leading-relaxed text-[var(--color-neutral-500)]">
             Ledgeraa is a bookkeeping app, and only that. It does not give
             financial, tax, or accountancy advice. For advice about your own
@@ -452,7 +502,7 @@ function EverythingYouNeed() {
         <div className="mx-auto max-w-[46rem] text-center">
           <Eyebrow>Complete Bookkeeping for Sole Traders</Eyebrow>
           <Heading level="display-md" as="h2" className="mt-5">
-            Everything you need as a sole trader. Nothing else.
+            Complete bookkeeping for sole traders: money in, money out
           </Heading>
           <Lede className="mt-4" align="center">
             All your bookkeeping in one place, designed only for sole traders.

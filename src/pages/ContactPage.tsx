@@ -11,6 +11,7 @@ import {
   Illustration,
 } from "@ds/primitives";
 import { HELLO_EMAIL, SIGNUP_URL } from "@/config/site";
+import { Seo } from "@/Seo";
 
 /**
  * ContactPage (/contact) - two jobs: point people to email us, and set honest
@@ -21,6 +22,7 @@ import { HELLO_EMAIL, SIGNUP_URL } from "@/config/site";
 export function ContactPage() {
   return (
     <>
+      <Seo path="/contact" />
       <Nav current="/contact" />
 
       <main>
@@ -29,7 +31,7 @@ export function ContactPage() {
           <Container width="narrow">
             <div className="text-center">
               <Eyebrow withDot>Contact</Eyebrow>
-              <Heading level="display-lg" className="mt-6">
+              <Heading level="display-lg" as="h1" className="mt-6">
                 Say hello.
               </Heading>
               <Lede className="mt-5" align="center">

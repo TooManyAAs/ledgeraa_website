@@ -1,0 +1,165 @@
+{
+  "siteUrl": "https://ledgeraa.com",
+  "siteName": "Ledgeraa",
+  "shareImage": "/logo-lockup.png",
+  "offers": [
+    { "name": "Free", "price": "0" },
+    { "name": "Standard", "price": "4.99" },
+    { "name": "Unlimited", "price": "7.99" }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "MTD Bookkeeping App for UK Sole Traders | Ledgeraa",
+      "description": "Plain-English bookkeeping and Making Tax Digital app for UK sole traders. Snap receipts, send invoices and submit your MTD updates. Free to start, MTD from £4.99 a month.",
+      "changefreq": "weekly",
+      "priority": "1.0",
+      "schema": ["organization", "software"]
+    },
+    {
+      "path": "/pricing",
+      "title": "Pricing: Free, £4.99 or £7.99 a Month | Ledgeraa",
+      "description": "Free plan with unlimited invoices. Standard at £4.99 a month adds MTD submissions, receipt scanning and other income.",
+      "changefreq": "weekly",
+      "priority": "0.9",
+      "schema": ["software"]
+    },
+    {
+      "path": "/making-tax-digital",
+      "title": "Making Tax Digital for Sole Traders: A Plain-English Guide | Ledgeraa",
+      "description": "What Making Tax Digital for Income Tax means for UK sole traders: who has to join and when, what you have to send HMRC, and how to get ready.",
+      "changefreq": "monthly",
+      "priority": "0.9"
+    },
+    {
+      "path": "/making-tax-digital/do-i-need-it",
+      "title": "Do I Need Making Tax Digital? MTD Threshold Checker | Ledgeraa",
+      "description": "Check when Making Tax Digital for Income Tax applies to you. Enter your self-employment and property income to see your MTD start date.",
+      "changefreq": "monthly",
+      "priority": "0.8"
+    },
+    {
+      "path": "/making-tax-digital/deadlines",
+      "title": "MTD Quarterly Update Deadlines 2026 to 2028 | Ledgeraa",
+      "description": "Every Making Tax Digital deadline for sole traders: quarterly update dates, the end-of-year tax return and when each income threshold starts.",
+      "changefreq": "monthly",
+      "priority": "0.8"
+    },
+    {
+      "path": "/making-tax-digital/first-quarterly-update",
+      "title": "Your First MTD Quarterly Update, Step by Step | Ledgeraa",
+      "description": "How to send your first Making Tax Digital quarterly update: sign up, connect your software, check your figures and submit before the 7th.",
+      "changefreq": "monthly",
+      "priority": "0.7"
+    },
+    {
+      "path": "/making-tax-digital/hmrc-signed-me-up",
+      "title": "HMRC Signed Me Up for Making Tax Digital: What Now? | Ledgeraa",
+      "description": "HMRC has signed you up for Making Tax Digital for Income Tax. Here is what that means and the steps to get your records and updates sorted.",
+      "changefreq": "monthly",
+      "priority": "0.7"
+    },
+    {
+      "path": "/free-invoice-app",
+      "title": "Free Invoice App for UK Sole Traders | Ledgeraa",
+      "description": "Send unlimited professional PDF invoices for free. Ledgeraa's Free plan is built for UK sole traders, with an easy upgrade to Making Tax Digital.",
+      "changefreq": "monthly",
+      "priority": "0.8"
+    },
+    {
+      "path": "/switch-from-spreadsheets",
+      "title": "Switch from Spreadsheets to Bookkeeping Software | Ledgeraa",
+      "description": "Moving from Excel or Google Sheets? Import your invoices, sales and expenses as CSV or Excel files and get ready for Making Tax Digital.",
+      "changefreq": "monthly",
+      "priority": "0.7"
+    },
+    {
+      "path": "/compare/sage-sole-trader",
+      "title": "Ledgeraa vs Sage Sole Trader: An Honest Comparison | Ledgeraa",
+      "description": "How Ledgeraa and Sage Sole Trader compare for UK sole traders on price, Making Tax Digital, VAT and everyday bookkeeping.",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "path": "/compare/clear-books",
+      "title": "Ledgeraa vs Clear Books: An Honest Comparison | Ledgeraa",
+      "description": "How Ledgeraa and Clear Books compare for UK sole traders on price, Making Tax Digital, VAT and everyday bookkeeping.",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "path": "/compare/freeagent",
+      "title": "Ledgeraa vs FreeAgent: An Honest Comparison | Ledgeraa",
+      "description": "How Ledgeraa and FreeAgent compare for UK sole traders on price, Making Tax Digital, bank feeds and everyday bookkeeping.",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "path": "/compare/coconut",
+      "title": "Ledgeraa vs Coconut: An Honest Comparison | Ledgeraa",
+      "description": "How Ledgeraa and Coconut compare for UK sole traders on price, Making Tax Digital and everyday bookkeeping.",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "path": "/for/taxi-drivers",
+      "title": "Bookkeeping and MTD for Taxi Drivers | Ledgeraa",
+      "description": "Plain-English bookkeeping for self-employed taxi and private hire drivers: what to record, common expenses and getting ready for Making Tax Digital.",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "path": "/for/cleaners",
+      "title": "Bookkeeping and MTD for Self-Employed Cleaners | Ledgeraa",
+      "description": "Plain-English bookkeeping for self-employed cleaners: invoicing clients, common expenses and getting ready for Making Tax Digital.",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "path": "/support",
+      "title": "Making Tax Digital Help for Sole Traders | Ledgeraa",
+      "description": "Plain-English help with Making Tax Digital and Self Assessment for UK sole traders, and where to get qualified advice.",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact Ledgeraa | Ledgeraa",
+      "description": "Get in touch with the Ledgeraa team. We're two founders in the UK and we read every message.",
+      "changefreq": "monthly",
+      "priority": "0.5"
+    },
+    {
+      "path": "/join",
+      "title": "Create Your Free Account | Ledgeraa",
+      "description": "Create your free Ledgeraa account and send your first invoice in minutes. Plain-English bookkeeping for UK sole traders.",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "path": "/terms",
+      "title": "Terms & Conditions | Ledgeraa",
+      "description": "The terms that apply when you use Ledgeraa.",
+      "changefreq": "yearly",
+      "priority": "0.3"
+    },
+    {
+      "path": "/cookies",
+      "title": "Cookie Policy | Ledgeraa",
+      "description": "How Ledgeraa uses cookies.",
+      "changefreq": "yearly",
+      "priority": "0.3"
+    },
+    {
+      "path": "/privacy",
+      "title": "Privacy Policy | Ledgeraa",
+      "description": "How Ledgeraa collects, stores and protects your data. Your records live in the EU, encrypted, and we never sell them.",
+      "changefreq": "yearly",
+      "priority": "0.3"
+    }
+  ],
+  "notFound": {
+    "title": "Page not found | Ledgeraa",
+    "description": "This page doesn't exist or has moved."
+  }
+}

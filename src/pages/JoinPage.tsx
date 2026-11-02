@@ -9,6 +9,7 @@ import {
   Button,
 } from "@ds/primitives";
 import { SIGNUP_URL, SIGNIN_URL } from "@/config/site";
+import { Seo } from "@/Seo";
 
 /**
  * JoinPage (/join) - a focused, high-intent conversion landing. One job: send
@@ -24,6 +25,7 @@ const recap = [
 export function JoinPage() {
   return (
     <>
+      <Seo path="/join" />
       <Nav current="/join" />
 
       <main>

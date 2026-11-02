@@ -14,13 +14,16 @@ import {
  *  site map can evolve independently. `ext` marks an external resource. */
 const PRODUCT_LINKS = [
   { href: "/#what-you-get", label: "Features" },
-  { href: "/#mtd", label: "MTD" },
+  { href: "/making-tax-digital", label: "Making Tax Digital" },
+  { href: "/free-invoice-app", label: "Free invoice app" },
   { href: "/pricing", label: "Pricing" },
 ];
 
 const HELP_LINKS = [
   { href: "/contact", label: "Contact" },
   { href: "/support", label: "Support" },
+  { href: "/making-tax-digital/do-i-need-it", label: "Do I need MTD?" },
+  { href: "/making-tax-digital/deadlines", label: "MTD deadlines" },
   { href: HMRC_SELF_ASSESSMENT_URL, label: "Understanding tax returns", ext: true },
   { href: FIND_ACCOUNTANT_URL, label: "Find a chartered accountant", ext: true },
 ];

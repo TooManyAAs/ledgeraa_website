@@ -10,8 +10,19 @@ import { PrivacyPage } from "./pages/PrivacyPage";
 import { PlaygroundPage } from "./playground/PlaygroundPage";
 import { SectionsPage } from "./playground/SectionsPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
+import { MtdHubPage } from "./pages/content/MtdHubPage";
+import { MtdCheckerPage } from "./pages/content/MtdCheckerPage";
+import { MtdDeadlinesPage } from "./pages/content/MtdDeadlinesPage";
+import { FirstQuarterlyUpdatePage } from "./pages/content/FirstQuarterlyUpdatePage";
+import { HmrcSignedMeUpPage } from "./pages/content/HmrcSignedMeUpPage";
+import { FreeInvoiceAppPage } from "./pages/content/FreeInvoiceAppPage";
+import { SwitchFromSpreadsheetsPage } from "./pages/content/SwitchFromSpreadsheetsPage";
+import { ComparePage, COMPARE_SLUGS } from "./pages/content/ComparePage";
+import { TradePage, TRADE_SLUGS } from "./pages/content/TradePage";
 import { ScrollToHash } from "./ScrollToHash";
 
+// New routes also need an entry in src/config/seo-pages.json (title,
+// description, sitemap) or the build won't write an HTML file for them.
 export function App() {
   return (
     <BrowserRouter>
@@ -19,15 +30,35 @@ export function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/making-tax-digital" element={<MtdHubPage />} />
+        <Route path="/making-tax-digital/do-i-need-it" element={<MtdCheckerPage />} />
+        <Route path="/making-tax-digital/deadlines" element={<MtdDeadlinesPage />} />
+        <Route
+          path="/making-tax-digital/first-quarterly-update"
+          element={<FirstQuarterlyUpdatePage />}
+        />
+        <Route path="/making-tax-digital/hmrc-signed-me-up" element={<HmrcSignedMeUpPage />} />
+        <Route path="/free-invoice-app" element={<FreeInvoiceAppPage />} />
+        <Route path="/switch-from-spreadsheets" element={<SwitchFromSpreadsheetsPage />} />
+        {COMPARE_SLUGS.map((slug) => (
+          <Route key={slug} path={`/compare/${slug}`} element={<ComparePage slug={slug} />} />
+        ))}
+        {TRADE_SLUGS.map((slug) => (
+          <Route key={slug} path={`/for/${slug}`} element={<TradePage slug={slug} />} />
+        ))}
         <Route path="/join" element={<JoinPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/support" element={<SupportPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/cookies" element={<CookiesPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
-        {/* Dev-only surfaces */}
-        <Route path="/playground" element={<PlaygroundPage />} />
-        <Route path="/sections" element={<SectionsPage />} />
+        {/* Dev-only surfaces: not registered in production builds. */}
+        {import.meta.env.DEV && (
+          <>
+            <Route path="/playground" element={<PlaygroundPage />} />
+            <Route path="/sections" element={<SectionsPage />} />
+          </>
+        )}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

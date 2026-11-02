@@ -25,10 +25,14 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      # Sign-up / log-in buttons point at the live app. Without this the
+      # build falls back to http://localhost:3000 (see src/config/site.ts).
+      # `npm run build` also writes one HTML file per route, a noindexed
+      # 404.html and sitemap.xml (scripts/build-pages.mjs), so every page
+      # returns a 200 with its own title instead of going through 404.html.
       - run: npm run build
-      # SPA fallback: BrowserRouter routes (/pricing, /join) 404 on a direct
-      # hit/refresh unless Pages serves index.html for unknown paths.
-      - run: cp dist/index.html dist/404.html
+        env:
+          VITE_APP_ORIGIN: https://app.ledgeraa.com
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

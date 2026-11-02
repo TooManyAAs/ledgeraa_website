@@ -14,6 +14,7 @@ import {
   Illustration,
 } from "@ds/primitives";
 import { HMRC_SELF_ASSESSMENT_URL, FIND_ACCOUNTANT_URL } from "@/config/site";
+import { Seo } from "@/Seo";
 
 /**
  * SupportPage (/support) - a few trusted support resources, not documentation.
@@ -53,6 +54,7 @@ const DISCLAIMERS = [
 export function SupportPage() {
   return (
     <>
+      <Seo path="/support" />
       <Nav current="/support" />
 
       <main>
@@ -61,8 +63,8 @@ export function SupportPage() {
           <Container width="narrow">
             <div className="text-center">
               <Eyebrow withDot>Support</Eyebrow>
-              <Heading level="display-lg" className="mt-6">
-                Help when you need it.
+              <Heading level="display-lg" as="h1" className="mt-6">
+                Making Tax Digital help for sole traders
               </Heading>
               <Lede className="mt-5" align="center">
                 A few trusted places to turn when tax gets confusing. We'll

@@ -32,12 +32,32 @@ export const HMRC_SELF_ASSESSMENT_URL =
 export const FIND_ACCOUNTANT_URL =
   "https://www.icaew.com/about-icaew/find-a-chartered-accountant";
 
+/** GOV.UK Making Tax Digital guidance, linked from the MTD pages. */
+export const GOV = {
+  useMtd: "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax",
+  checkEligible:
+    "https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax",
+  qualifyingIncome:
+    "https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax",
+  quarterlyUpdates:
+    "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates",
+  signUp:
+    "https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax",
+  findSoftware:
+    "https://www.gov.uk/guidance/find-software-that-works-with-making-tax-digital-for-income-tax",
+  stepByStep:
+    "https://www.gov.uk/government/collections/making-tax-digital-for-income-tax-for-businesses-step-by-step",
+  expenses: "https://www.gov.uk/expenses-if-youre-self-employed",
+  simplifiedExpenses: "https://www.gov.uk/simpler-income-tax-simplified-expenses",
+} as const;
+
 /** Primary nav links (marketing routes are same-origin; app links are absolute).
  *  Contact + Support live in the footer; the top nav stays lean. */
 export const NAV_LINKS: ReadonlyArray<{ href: string; label: string }> = [
   { href: "/#what-you-get", label: "Features" },
+  { href: "/making-tax-digital", label: "Making Tax Digital" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/#faq", label: "FAQ" },
+  { href: "/support", label: "Help" },
 ];
 
 // ─── Plans ───────────────────────────────────────────────────────────────────
@@ -140,7 +160,7 @@ export const COMPARE_ROWS: readonly CompareRow[] = [
     standard: "Up to 2 / expense",
     unlimited: "Unlimited",
   },
-  { label: "Recurrent Invoices/Expenses", free: false, standard: true, unlimited: true },
+  { label: "Recurring invoices and expenses", free: false, standard: true, unlimited: true },
   { label: "“Other income” declaration", free: false, standard: true, unlimited: true },
   { label: "Full MTD / HMRC submission", free: false, standard: true, unlimited: true },
   { label: "VAT (for VAT-registered sole traders)", free: false, standard: false, unlimited: true },

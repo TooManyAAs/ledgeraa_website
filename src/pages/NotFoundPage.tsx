@@ -9,6 +9,7 @@ import {
   Button,
   Illustration,
 } from "@ds/primitives";
+import { Seo } from "@/Seo";
 
 /**
  * NotFoundPage (catch-all `*`) - shown for any unknown URL. Reuses the branded
@@ -18,6 +19,7 @@ import {
 export function NotFoundPage() {
   return (
     <>
+      <Seo />
       <Nav />
 
       <main>
@@ -25,7 +27,7 @@ export function NotFoundPage() {
           <Container width="narrow">
             <div className="text-center">
               <Eyebrow>Error 404</Eyebrow>
-              <Heading level="display-lg" className="mt-6">
+              <Heading level="display-lg" as="h1" className="mt-6">
                 This page took a wrong turn.
               </Heading>
               <Lede className="mt-5" align="center">

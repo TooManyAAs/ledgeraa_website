@@ -20,7 +20,15 @@ import {
   IconCircle,
   Illustration,
 } from "@ds/primitives";
-import { SIGNUP_URL } from "@/config/site";
+import { SIGNUP_URL, PLANS, type PlanId } from "@/config/site";
+
+/** Yearly cost of a plan, derived from its monthly price in site.ts. */
+function annual(id: PlanId) {
+  const plan = PLANS.find((p) => p.id === id);
+  const monthly = Number(plan?.priceMain.replace(/[^0-9.]/g, "") ?? 0);
+  return (monthly * 12).toFixed(2);
+}
+import { Seo } from "@/Seo";
 
 const pricingFaqs: FaqEntry[] = [
   {
@@ -86,6 +94,7 @@ const pricingFaqs: FaqEntry[] = [
 export function PricingPage() {
   return (
     <>
+      <Seo path="/pricing" />
       <Nav current="/pricing" />
 
       <main>
@@ -94,10 +103,8 @@ export function PricingPage() {
           <Container width="narrow">
             <div className="text-center">
               <Eyebrow withDot>Simple and honest pricing</Eyebrow>
-              <Heading level="display-lg" className="mt-6">
-                Everything you need.
-                <br />
-                Always at £4.99 a month.
+              <Heading level="display-lg" as="h1" className="mt-6">
+                Sole trader bookkeeping and MTD pricing: free, £4.99 or £7.99
               </Heading>
               <Lede className="mt-5" align="center">
                 No add-ons, no first-year discount that doubles in year two. The
@@ -125,11 +132,18 @@ export function PricingPage() {
         <Section background="canvas" spacing="sm">
           <Container>
             <PricingPlans compact />
+            <p className="mt-6 text-center text-sm text-[var(--color-ink-muted)]">
+              Per year: Standard £{annual("standard")}, Unlimited £
+              {annual("unlimited")}.
+            </p>
           </Container>
         </Section>
 
         {/* Full comparison table */}
-        <PricingTable eyebrow="Side to side" heading="Compare Plans" />
+        <PricingTable
+          eyebrow="Compare plans"
+          heading="Compare Free, Standard and Unlimited"
+        />
 
         {/* What's coming next */}
         <ComingSoon />
@@ -137,7 +151,7 @@ export function PricingPage() {
         {/* Pricing FAQ */}
         <FaqAccordion
           eyebrow="Pricing questions"
-          heading="Frequently Asked Questions"
+          heading="Pricing questions: what Free, Standard and Unlimited include"
           items={pricingFaqs}
         />
 

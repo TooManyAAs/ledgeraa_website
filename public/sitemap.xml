@@ -2,9 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ledgeraa.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://ledgeraa.com/pricing</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ledgeraa.com/making-tax-digital</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ledgeraa.com/making-tax-digital/do-i-need-it</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ledgeraa.com/making-tax-digital/deadlines</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ledgeraa.com/making-tax-digital/first-quarterly-update</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ledgeraa.com/making-tax-digital/hmrc-signed-me-up</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ledgeraa.com/free-invoice-app</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ledgeraa.com/switch-from-spreadsheets</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ledgeraa.com/compare/sage-sole-trader</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ledgeraa.com/compare/clear-books</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ledgeraa.com/compare/freeagent</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ledgeraa.com/compare/coconut</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ledgeraa.com/for/taxi-drivers</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ledgeraa.com/for/cleaners</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ledgeraa.com/support</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://ledgeraa.com/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://ledgeraa.com/join</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ledgeraa.com/contact</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://ledgeraa.com/join</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://ledgeraa.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://ledgeraa.com/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://ledgeraa.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>

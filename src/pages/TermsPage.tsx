@@ -1,10 +1,12 @@
 import { Nav, Footer } from "@ds/patterns";
 import { Container, Section, Eyebrow, Heading, Lede } from "@ds/primitives";
+import { Seo } from "@/Seo";
 
 // ponytail: placeholder, full terms land next.
 export function TermsPage() {
   return (
     <>
+      <Seo path="/terms" />
       <Nav current="/terms" />
       <main>
         <Section background="paper" spacing="lg">
