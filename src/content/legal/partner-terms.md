@@ -2,9 +2,9 @@
 
 *Drafting note (remove before publication): this document was prepared before the feature was built. Items in square brackets depend on its final design.*
 
-These Partner Terms are made between Ledgeraa LTD, a company registered in England and Wales under company number 17344886, whose registered office is at 167-169 Great Portland Street, 5th Floor, London, W1W 5PF ("Ledgeraa"), and the accountancy, bookkeeping or tax practice that accepts them (the "Partner", "you" or "your").
+These Partner Terms are made between Ledgeraa LTD, a company registered in England and Wales under company number 17344886, whose registered office is at 167-169 Great Portland Street, 5th Floor, London, W1W 5PF (**"Ledgeraa"**), and the accountancy, bookkeeping or tax practice that accepts them (the **"Partner"**, **"you"** or **"your"**).
 
-### 1. Definitions and interpretation
+## 1. Definitions and interpretation
 
 1.1 In these Partner Terms:
 
@@ -26,7 +26,7 @@ These Partner Terms are made between Ledgeraa LTD, a company registered in Engla
 
 1.3 Headings do not affect the interpretation of these Partner Terms. The words "including" and "include" are to be read without limitation.
 
-### 2. Formation and relationship with the Terms
+## 2. Formation and relationship with the Terms
 
 2.1 You accept these Partner Terms by ticking the acceptance box when you register for a Partner Account. The individual who accepts these Partner Terms on your behalf represents and warrants that they are authorised to bind you.
 
@@ -40,7 +40,7 @@ These Partner Terms are made between Ledgeraa LTD, a company registered in Engla
 
 (c) clause 14.4 (HMRC penalties), in respect of any penalty or interest charged to you, or for which you are liable.
 
-### 3. Eligibility
+## 3. Eligibility
 
 3.1 You represent and warrant, on registration and on a continuing basis, that you:
 
@@ -56,7 +56,7 @@ These Partner Terms are made between Ledgeraa LTD, a company registered in Engla
 
 3.2 You shall provide evidence of any of the matters in clause 3.1 promptly on request, and shall notify Ledgeraa immediately if any of them ceases to apply.
 
-### 4. Access to Client Accounts
+## 4. Access to Client Accounts
 
 4.1 **Client authorisation.** You may access a Client's Account only after that Client has invited or authorised you through the Service, and by no other means.
 
@@ -80,7 +80,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 4.6 **Suspension of access.** Ledgeraa may suspend your access to any or all Client Accounts with immediate effect where it reasonably suspects unauthorised access, misuse of Client Data, a security incident or a breach of these Partner Terms. Ledgeraa shall notify you and, where appropriate, the affected Client, and shall restore your access once the cause of the suspension has been resolved.
 
-### 5. Submissions on behalf of Clients
+## 5. Submissions on behalf of Clients
 
 5.1 You shall make a Submission on behalf of a Client only where:
 
@@ -94,7 +94,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 5.3 Where you make or prepare a Submission for a Client, your review of that Submission is treated as the Client's review for the purposes of clause 14.4 of the Terms. Ledgeraa shall not be required to reimburse under clause 14.4 any penalty or interest arising from an error that a reasonably competent professional reviewing the Submission would have identified.
 
-### 6. Professional responsibility
+## 6. Professional responsibility
 
 6.1 You are solely responsible for the advice and services you provide to Clients, which are governed by your own engagement terms with them.
 
@@ -110,7 +110,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 6.4 You and Ledgeraa are independent parties. Nothing in these Partner Terms creates a partnership, joint venture, agency or employment relationship between you and Ledgeraa, and neither party may bind the other.
 
-### 7. Data protection
+## 7. Data protection
 
 7.1 **Disclosure on the Client's instruction.** When a Client grants you access, Ledgeraa makes Client Data available to you on the Client's documented instructions, acting as the Client's processor under the DPA.
 
@@ -136,7 +136,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 (f) provide your Partner Personnel with Ledgeraa's Privacy Policy, or otherwise inform them of how Ledgeraa processes their personal data.
 
-### 8. Fees
+## 8. Fees
 
 8.1 [Partner access is provided free of charge.] / [Partner access is charged at £[amount] per month, payable monthly in advance in accordance with clause 5 of the Terms.]
 
@@ -146,7 +146,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 8.4 No commission, referral fee or other payment is payable by either party to the other in connection with Clients, unless agreed in writing.
 
-### 9. Use of names and branding
+## 9. Use of names and branding
 
 9.1 You may state that you use or support the Service.
 
@@ -162,7 +162,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 9.4 [With your consent, Ledgeraa may list you in a directory of Partners published within the Service or on its website.]
 
-### 10. Confidentiality
+## 10. Confidentiality
 
 10.1 Each party shall keep confidential the Confidential Information of the other party, and shall use it only for the purposes of these Partner Terms. **"Confidential Information"** means all non-public business information of a party disclosed in connection with these Partner Terms. It does not include Client Data, which is governed by clause 7.
 
@@ -184,7 +184,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 10.4 This clause 10 continues to apply for [three] years after these Partner Terms end.
 
-### 11. Liability and indemnity
+## 11. Liability and indemnity
 
 11.1 Clause 14 of the Terms applies to these Partner Terms, save that:
 
@@ -212,7 +212,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 (d) take reasonable steps to mitigate its loss.
 
-### 12. Term, suspension and termination
+## 12. Term, suspension and termination
 
 12.1 These Partner Terms commence when you accept them and continue until terminated in accordance with this clause 12.
 
@@ -246,7 +246,7 @@ You are responsible for the acts and omissions of your Partner Personnel as if t
 
 12.6 Clauses 6, 7.4, 10, 11, 12.5, 12.6 and 13, and any rights or liabilities that have accrued before termination, survive termination.
 
-### 13. Amendments, notices and general
+## 13. Amendments, notices and general
 
 13.1 Ledgeraa shall give you not less than 30 days' notice of any material amendment to these Partner Terms, by email to the address registered to your Partner Account. If you do not accept the amendment, you may terminate these Partner Terms before it takes effect. Your continued use of the Service as a Partner after the amendment takes effect constitutes acceptance of it.
 

@@ -1,6 +1,6 @@
 **Version 1.0 · Last updated 1 November 2026**
 
-This page is published by Ledgeraa LTD ("Ledgeraa", "we", "us" or "our"). It forms part of our Data Processing Agreement and identifies:
+This page is published by Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**). It forms part of our Data Processing Agreement and identifies:
 
 (a) in Part A, the Sub-processors that process Customer Personal Data on your behalf;
 
@@ -8,13 +8,13 @@ This page is published by Ledgeraa LTD ("Ledgeraa", "we", "us" or "our"). It for
 
 (c) in Part C, the third parties that receive personal data as independent controllers.
 
-### 1. Definitions and interpretation
+## 1. Definitions and interpretation
 
 1.1 In this page, **"DPA"** means our Data Processing Agreement, published at ledgeraa.com/dpa.
 
-1.2 Other capitalised terms used in this page, including "Customer Personal Data" and "Sub-processor", have the meanings given in the DPA or, where not defined in the DPA, in our Terms of Service (the "Terms").
+1.2 Other capitalised terms used in this page, including "Customer Personal Data" and "Sub-processor", have the meanings given in the DPA or, where not defined in the DPA, in our Terms of Service (the **"Terms"**).
 
-### 2. Part A: Sub-processors
+## 2. Part A: Sub-processors
 
 2.1 Ledgeraa has engaged the following Sub-processors to process Customer Personal Data in providing the Service.
 
@@ -27,7 +27,7 @@ This page is published by Ledgeraa LTD ("Ledgeraa", "we", "us" or "our"). It for
 
 2.2 Each Sub-processor is bound by a written contract that imposes data protection obligations no less protective than those set out in the DPA. Ledgeraa remains responsible for each Sub-processor in accordance with clause 4 of the DPA.
 
-### 3. Part B: Service providers where Ledgeraa is the controller
+## 3. Part B: Service providers where Ledgeraa is the controller
 
 3.1 The following service providers process personal data on our behalf where we are the controller, such as account, billing and correspondence data, as described in our Privacy Policy. They are not Sub-processors for the purposes of the DPA, and clause 5 of this page does not apply to them. We list them here for transparency.
 
@@ -38,7 +38,7 @@ This page is published by Ledgeraa LTD ("Ledgeraa", "we", "us" or "our"). It for
 
 3.2 The Sub-processors listed in Part A also process personal data on our behalf where we are the controller, such as the account and sign-in data held by Supabase.
 
-### 4. Part C: Independent recipients
+## 4. Part C: Independent recipients
 
 4.1 The following third parties receive personal data as controllers in their own right. They are not Sub-processors or service providers of Ledgeraa, and each processes that data under its own privacy notice:
 
@@ -48,7 +48,7 @@ This page is published by Ledgeraa LTD ("Ledgeraa", "we", "us" or "our"). It for
 
 (c) professional advisers, regulators, courts, law enforcement agencies and other public authorities, where disclosure is required by law or is otherwise permitted as described in section 6 of our Privacy Policy.
 
-### 5. Changes to Sub-processors
+## 5. Changes to Sub-processors
 
 5.1 In accordance with clause 4 of the DPA, Ledgeraa shall update this page, and notify you by email to the address registered to your Account or by notice within the Service, not less than 30 days before:
 
@@ -66,12 +66,12 @@ This page is published by Ledgeraa LTD ("Ledgeraa", "we", "us" or "our"). It for
 
 5.5 Changes to Part B or Part C shall be reflected on this page and, where material, in our Privacy Policy.
 
-### 6. Version history
+## 6. Version history
 
 | Version | Date | Changes |
 | --- | --- | --- |
 | 1.0 | 1 November 2026 | First published |
 
-### 7. Contact
+## 7. Contact
 
 7.1 Questions about this page may be sent to privacy@ledgeraa.com, or by post to Ledgeraa LTD, 167-169 Great Portland Street, 5th Floor, London, W1W 5PF.

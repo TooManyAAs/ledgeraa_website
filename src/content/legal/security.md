@@ -1,12 +1,12 @@
 **Version 1.0 · Last updated 1 November 2026**
 
-The Ledgeraa Service holds users' tax identifiers, financial records and a connection to their HMRC accounts. Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") therefore treats security as fundamental to the Service. This page describes the measures we take to protect data, explains how you can protect your Account, and sets out how to report a security vulnerability.
+The Ledgeraa Service holds users' tax identifiers, financial records and a connection to their HMRC accounts. Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) therefore treats security as fundamental to the Service. This page describes the measures we take to protect data, explains how you can protect your Account, and sets out how to report a security vulnerability.
 
-### 1. Status of this page
+## 1. Status of this page
 
 1.1 This page is provided for information only. It describes, in general terms, the technical and organisational measures that Ledgeraa has in place at the date shown above.
 
-1.2 This page does not form part of our Terms of Service (the "Terms") or our Data Processing Agreement (the "DPA"), and does not create any obligation, warranty or representation in addition to them. Ledgeraa's contractual commitments on security are set out in the Terms and in Annex 2 to the DPA.
+1.2 This page does not form part of our Terms of Service (the **"Terms"**) or our Data Processing Agreement (the **"DPA"**), and does not create any obligation, warranty or representation in addition to them. Ledgeraa's contractual commitments on security are set out in the Terms and in Annex 2 to the DPA.
 
 1.3 No method of transmitting or storing data is completely secure. Ledgeraa cannot guarantee that data will never be subject to unauthorised access, loss or disclosure. Nothing in this clause limits any liability that cannot be limited or excluded by law, or affects your statutory rights.
 
@@ -14,7 +14,7 @@ The Ledgeraa Service holds users' tax identifiers, financial records and a conne
 
 1.5 Capitalised terms used on this page and not defined in it have the meanings given in the Terms.
 
-### 2. How we protect data
+## 2. How we protect data
 
 2.1 **Encryption.**
 
@@ -80,7 +80,7 @@ The Ledgeraa Service holds users' tax identifiers, financial records and a conne
 
 (a) take prompt steps to contain it and to assess its effect;
 
-(b) notify the Information Commission (the "ICO") within 72 hours of becoming aware of it, where the law requires;
+(b) notify the Information Commission (the **"ICO"**) within 72 hours of becoming aware of it, where the law requires;
 
 (c) notify affected users without undue delay where the breach is likely to result in a high risk to them, or where the law otherwise requires;
 
@@ -88,7 +88,7 @@ The Ledgeraa Service holds users' tax identifiers, financial records and a conne
 
 (e) notify HMRC where HMRC's terms of use require.
 
-### 3. Protecting your Account
+## 3. Protecting your Account
 
 3.1 You are responsible for keeping your Account credentials secure, in accordance with clause 4.3 of the Terms. We recommend that you:
 
@@ -100,7 +100,7 @@ The Ledgeraa Service holds users' tax identifiers, financial records and a conne
 
 (d) if you notice any unusual activity, change your password, disconnect HMRC in Settings and notify privacy@ledgeraa.com immediately. You may also revoke the Service's access through your HMRC online account.
 
-### 4. Reporting a vulnerability
+## 4. Reporting a vulnerability
 
 4.1 If you believe you have identified a security vulnerability in the Service, please report it to **privacy@ledgeraa.com** with "Security" in the subject line. Your report should include a description of the vulnerability, the steps needed to reproduce it, the parts of the Service affected and its likely impact. Please do not include any other person's personal data beyond what is strictly necessary to describe the issue.
 
@@ -140,11 +140,11 @@ The Ledgeraa Service holds users' tax identifiers, financial records and a conne
 
 4.6 We do not currently operate a paid bug bounty programme, and no report entitles you to any payment.
 
-### 5. Contact
+## 5. Contact
 
 5.1 Questions about this page may be sent to privacy@ledgeraa.com.
 
-### security.txt
+## security.txt
 
 *Publication note: publish the following file at* `https://www.ledgeraa.com/.well-known/security.txt`*. Renew the Expires date before it passes.*
 

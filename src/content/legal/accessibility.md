@@ -1,18 +1,18 @@
 **Version 1.0 · Last updated 1 November 2026**
 
-Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") is committed to ensuring that the Ledgeraa website and application (together, the "Service") can be used by as many people as possible, including people who use assistive technology. This statement explains the standard we aim to meet, the extent to which the Service currently meets it, and how you can obtain help or request an adjustment.
+Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) is committed to ensuring that the Ledgeraa website and application (together, the **"Service"**) can be used by as many people as possible, including people who use assistive technology. This statement explains the standard we aim to meet, the extent to which the Service currently meets it, and how you can obtain help or request an adjustment.
 
-### 1. Status and legal basis
+## 1. Status and legal basis
 
 1.1 This statement is published voluntarily. The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 do not apply to Ledgeraa, but we have followed the structure that they prescribe as a matter of good practice.
 
 1.2 As a provider of services to the public, Ledgeraa is subject to the duty to make reasonable adjustments for disabled people under the Equality Act 2010 and, in Northern Ireland, the Disability Discrimination Act 1995.
 
-1.3 This statement is provided for information only. It does not form part of our Terms of Service (the "Terms") and does not create any obligation, warranty or representation in addition to them. Nothing in this statement limits any right you have under the legislation referred to in clause 1.2.
+1.3 This statement is provided for information only. It does not form part of our Terms of Service (the **"Terms"**) and does not create any obligation, warranty or representation in addition to them. Nothing in this statement limits any right you have under the legislation referred to in clause 1.2.
 
 1.4 Capitalised terms used in this statement and not defined in it have the meanings given in the Terms.
 
-### 2. Scope
+## 2. Scope
 
 2.1 This statement applies to:
 
@@ -34,9 +34,9 @@ Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") is committed to ensuring that the
 
 2.3 If third-party content prevents you from using the Service, please contact us under section 6, and we shall consider what reasonable alternatives we can offer.
 
-### 3. Standard
+## 3. Standard
 
-3.1 We aim to meet the Web Content Accessibility Guidelines ("WCAG") version 2.2 at level AA. [HMRC requires Making Tax Digital software to meet this standard. Confirm this sentence against HMRC's current software requirements before publication, or delete it.]
+3.1 We aim to meet the Web Content Accessibility Guidelines (**"WCAG"**) version 2.2 at level AA. [HMRC requires Making Tax Digital software to meet this standard. Confirm this sentence against HMRC's current software requirements before publication, or delete it.]
 
 3.2 Our objective is that users should be able to:
 
@@ -66,7 +66,7 @@ Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") is committed to ensuring that the
 
 Information that you have entered but not saved is retained, and is restored when you sign back in.
 
-### 4. Compliance status
+## 4. Compliance status
 
 4.1 The Service is **partially compliant** with WCAG 2.2 level AA, owing to the non-compliances listed in clause 4.2.
 
@@ -74,17 +74,15 @@ Information that you have entered but not saved is retained, and is restored whe
 
 (a) **Invoice PDFs.** Invoice PDFs are generated as images, and their text therefore cannot be read by screen readers. All invoice details are available as text on the invoice page within the Service, and we shall provide an invoice in an accessible format on request.
 
-(b) [Any further issues identified in testing.]
+4.3 We are working to resolve the non-compliance listed in clause 4.2, and shall update this statement when it is resolved.
 
-4.3 We aim to resolve the non-compliances listed in clause 4.2 by [date], and shall update this statement as we do so.
+## 5. Preparation of this statement
 
-### 5. Preparation of this statement
+5.1 This statement was prepared on 1 November 2026. It is based on Ledgeraa's own assessment of the Service. We test the Service against the standard in clause 3.1 on an ongoing basis, using automated and manual checks, including keyboard navigation and review with screen readers. The Service has not yet been independently audited.
 
-5.1 This statement was prepared on [date]. It is based on a self-assessment carried out by Ledgeraa on [date], using [automated testing tools] and manual testing with a keyboard, browser zoom and [NVDA with Chrome on Windows, and VoiceOver with Safari on macOS and iOS]. The Service has not yet been independently audited.
+5.2 We shall review this statement at least once a year, and whenever we make a significant change to the Service. The next review is due by 1 November 2027.
 
-5.2 We shall review this statement at least once a year, and whenever we make a significant change to the Service. The next review is due by [date].
-
-### 6. Reasonable adjustments and alternative formats
+## 6. Reasonable adjustments and alternative formats
 
 6.1 If you experience difficulty using any part of the Service, or require information in an alternative format, please contact **hello@ledgeraa.com**. Please include:
 
@@ -102,7 +100,7 @@ Information that you have entered but not saved is retained, and is restored whe
 
 6.3 We shall respond to your request within 5 business days.
 
-### 7. HMRC deadlines and exemptions
+## 7. HMRC deadlines and exemptions
 
 7.1 If an accessibility issue in the Service is preventing you from meeting an HMRC Deadline, please tell us, and we shall prioritise your request.
 
@@ -110,7 +108,7 @@ Information that you have entered but not saved is retained, and is restored whe
 
 7.3 HMRC offers extra support to customers who need help because of a health condition or disability. You may also be entitled to apply to HMRC for exemption from Making Tax Digital if it is not reasonably practicable for you to use digital tools to keep your records or submit them, for example because of age, disability or location.
 
-### 8. Complaints and escalation
+## 8. Complaints and escalation
 
 8.1 Complaints about the accessibility of the Service are handled in accordance with clause 21 of the Terms.
 

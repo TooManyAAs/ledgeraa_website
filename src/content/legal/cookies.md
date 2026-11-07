@@ -1,8 +1,8 @@
 **Version 1.0 · Effective 1 November 2026**
 
-This Cookie Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") uses cookies and similar technologies on the website at ledgeraa.com and in the Ledgeraa application (together, the "Service"). It should be read together with our Privacy Policy and our Terms of Service.
+This Cookie Policy explains how Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) uses cookies and similar technologies on the website at ledgeraa.com and in the Ledgeraa application (together, the **"Service"**). It should be read together with our Privacy Policy and our Terms of Service.
 
-### 1. Definitions and interpretation
+## 1. Definitions and interpretation
 
 1.1 In this Cookie Policy:
 
@@ -24,7 +24,7 @@ This Cookie Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") u
 
 1.2 Other capitalised terms used in this Cookie Policy, including "Account", "Paid Plan" and "Submission", have the meanings given in the Terms.
 
-### 2. Our approach
+## 2. Our approach
 
 2.1 We use only Technologies that are exempt from the requirement for consent under PECR, because they are strictly necessary to provide the Service you have requested, including for security and fraud prevention.
 
@@ -32,15 +32,15 @@ This Cookie Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") u
 
 2.3 We shall not use any Technology that requires your consent unless we have first obtained it, as described in section 10.
 
-### 3. Legal framework
+## 3. Legal framework
 
 3.1 Regulation 6 of PECR requires consent before information is stored on, or accessed from, your device, unless an exemption applies.
 
 3.2 Schedule A1 to PECR sets out the exemptions. They include storage or access that is strictly necessary to provide an online service that you have requested, including storage or access for the purposes of security and of preventing or detecting fraud in connection with that service.
 
-3.3 The Information Commission (the "ICO") regards reading Device Information as gaining access to information stored on your device, which falls within regulation 6 whether or not anything is stored. Section 5 explains the Device Information we read.
+3.3 The Information Commission (the **"ICO"**) regards reading Device Information as gaining access to information stored on your device, which falls within regulation 6 whether or not anything is stored. Section 5 explains the Device Information we read.
 
-### 4. Technologies we use
+## 4. Technologies we use
 
 4.1 The Service uses the following Technologies:
 
@@ -49,14 +49,14 @@ This Cookie Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") u
 | sb-czleepzlwjjfloszfdzv-auth-token | Local Storage | Ledgeraa, through its authentication provider Supabase | First party | Keeps you securely signed in to your Account | The access token and refresh token for your session | Deleted when you sign out, or when you are signed out automatically after 10 minutes of inactivity | Strictly necessary to provide the Service you have requested and to secure your Account |
 | ledgeraa.deviceId | Local Storage | Ledgeraa | First party | Provides the device identifier that HMRC requires with each Making Tax Digital request (see section 6) | A randomly generated identifier | Until you clear your browser's site data | Strictly necessary for preventing or detecting fraud |
 | ledgeraa.onboarding.v2 | Session Storage | Ledgeraa | First party | Keeps the information you enter while registering, so that it is not lost if the page reloads | The details entered in the registration form, such as your name, email address and business details. Your password is never stored | Until you close the browser tab | Strictly necessary to retain information you have entered for the registration you requested |
-| __stripe_mid | Cookie | Stripe | Third party | Prevents and detects fraud in card payments | A randomly generated identifier | 1 year | Strictly necessary for secure payment and fraud prevention |
-| __stripe_sid | Cookie | Stripe | Third party | Prevents and detects fraud in card payments during your current session | A randomly generated session identifier | 30 minutes | Strictly necessary for secure payment and fraud prevention |
+| \_\_stripe\_mid | Cookie | Stripe | Third party | Prevents and detects fraud in card payments | A randomly generated identifier | 1 year | Strictly necessary for secure payment and fraud prevention |
+| \_\_stripe\_sid | Cookie | Stripe | Third party | Prevents and detects fraud in card payments during your current session | A randomly generated session identifier | 30 minutes | Strictly necessary for secure payment and fraud prevention |
 | Other Stripe technologies | Cookies and similar technologies on Stripe's own domains, within Stripe's payment form | Stripe | Third party | Secure payment processing and fraud detection | As described in Stripe's cookie policy | As described in Stripe's cookie policy | Strictly necessary for secure payment and fraud prevention |
-| __cf_bm | Cookie | Cloudflare, the content delivery network used by our hosting provider DigitalOcean | Third party | Distinguishes people from automated programs, to protect the Service and our website against automated attacks | An encrypted identifier | 30 minutes | Strictly necessary for security |
+| \_\_cf\_bm | Cookie | Cloudflare, the content delivery network used by our hosting provider DigitalOcean | Third party | Distinguishes people from automated programs, to protect the Service and our website against automated attacks | An encrypted identifier | 30 minutes | Strictly necessary for security |
 
-4.2 **Stripe.** Stripe acts as an independent controller of the information collected through its Technologies, under its own privacy policy (stripe.com/gb/privacy) and cookie policy (stripe.com/gb/legal/cookies-policy). Stripe's Technologies are set only when Stripe's payment components are loaded, which is during registration, when you select or change a Paid Plan, and when you manage your payment details.
+4.2 **Stripe.** Stripe acts as an independent controller of the information collected through its Technologies, under its own privacy policy (stripe.com/gb/privacy) and cookie policy (stripe.com/gb/legal/cookies-policy). Stripe's Technologies are set only when Stripe's payment components are loaded, which is [during registration, when you select or change a Paid Plan, and when you manage your payment details].
 
-### 5. Device Information read without storage
+## 5. Device Information read without storage
 
 5.1 Each time the Service sends a request to HMRC, the Service reads the following Device Information from your browser:
 
@@ -72,7 +72,7 @@ This Cookie Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") u
 
 5.3 Clause 3.2 of the Privacy Policy lists all of the fraud-prevention information sent to HMRC, including information supplied by our servers.
 
-### 6. The HMRC device identifier
+## 6. The HMRC device identifier
 
 6.1 HMRC requires all Making Tax Digital software to send fraud-prevention information about the user's device and connection with each request. HMRC uses this information to detect suspicious activity on taxpayers' accounts.
 
@@ -84,15 +84,15 @@ This Cookie Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") u
 
 (c) If you clear your browser's site data, a new identifier is created the next time you connect to HMRC.
 
-### 7. Our website and hosting
+## 7. Our website and hosting
 
 7.1 Other than the security Cookie described in clause 7.3, our website at ledgeraa.com does not set Cookies or use Local Storage or Session Storage.
 
 7.2 The fonts used on our website are hosted on our own servers, so loading them sends no information to any third party.
 
-7.3 The Service and our website are hosted by DigitalOcean and delivered through a content delivery network. That network, provided by Cloudflare, sets the __cf_bm Cookie on the Service and our website to protect them against automated attacks. It is listed in clause 4.1 and relies on the exemption for security purposes.
+7.3 The Service and our website are hosted by DigitalOcean and delivered through a content delivery network. That network, provided by Cloudflare, sets the \_\_cf\_bm Cookie on the Service and our website to protect them against automated attacks. It is listed in clause 4.1 and relies on the exemption for security purposes.
 
-### 8. Managing these Technologies
+## 8. Managing these Technologies
 
 8.1 You may view, block or delete Cookies and other site data at any time through your browser settings. Guidance is available from your browser provider:
 
@@ -116,13 +116,13 @@ This Cookie Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") u
 
 8.4 Because the Technologies listed in clause 4.1 are strictly necessary, the Service does not provide a setting to switch them off.
 
-### 9. Personal data
+## 9. Personal data
 
 9.1 Some of the information stored or accessed by these Technologies is personal data. This includes the session tokens linked to your Account, and the device identifier and Device Information sent to HMRC.
 
 9.2 We process that personal data in accordance with the Privacy Policy, which sets out our lawful bases (section 4), the recipients of personal data (section 6) and how long we retain it (section 8).
 
-### 10. Changes to this Cookie Policy
+## 10. Changes to this Cookie Policy
 
 10.1 We review this Cookie Policy at least once a year, and whenever we change the Technologies we use.
 
@@ -134,7 +134,7 @@ This Cookie Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") u
 
 10.3 We shall notify registered users of material changes to this Cookie Policy by email or by notice within the Service. The effective date of each version is shown at the top of this Cookie Policy.
 
-### 11. Contact and complaints
+## 11. Contact and complaints
 
 11.1 Questions about this Cookie Policy may be sent to privacy@ledgeraa.com.
 

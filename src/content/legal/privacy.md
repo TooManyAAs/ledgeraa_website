@@ -1,6 +1,6 @@
 **Version 1.0 · Effective 1 November 2026**
 
-This Privacy Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") collects and uses personal data. It covers the Ledgeraa website at ledgeraa.com and the Ledgeraa application (together, the "Service"), and sets out your rights under data protection law. In this Privacy Policy:
+This Privacy Policy explains how Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) collects and uses personal data. It covers the Ledgeraa website at ledgeraa.com and the Ledgeraa application (together, the **"Service"**), and sets out your rights under data protection law. In this Privacy Policy:
 
 - **"Terms"** means our [Terms of Service](https://www.ledgeraa.com/terms);
 - **"Customer Data"** means the records you store in the Service; and
@@ -13,17 +13,17 @@ This Privacy Policy explains how Ledgeraa LTD ("Ledgeraa", "we", "us" or "our") 
 > - Your records are stored principally in Ireland. Some service providers may access or process personal data outside the United Kingdom, with the safeguards described in section 7.
 > - When you delete your Account, your records are deleted 7 days after your request, and are removed from our backups within a further 7 days. We retain only the limited information described in section 8.
 
-### 1. Who we are
+## 1. Who we are
 
 1.1 Ledgeraa LTD is the controller of your personal data. We are a private limited company registered in England and Wales under company number 17344886, with our registered office at 167-169 Great Portland Street, 5th Floor, London, W1W 5PF.
 
 1.2 You may contact us about any matter relating to your personal data at **privacy@ledgeraa.com**.
 
-1.3 We are registered with the Information Commission (the "ICO"), the UK supervisory authority for data protection, under registration number ZC275711.
+1.3 We are registered with the Information Commission (the **"ICO"**), the UK supervisory authority for data protection, under registration number ZC275711.
 
 1.4 We have not appointed a data protection officer or an EU representative, as we are not required to do so. Please direct all enquiries to privacy@ledgeraa.com.
 
-### 2. Scope and our role
+## 2. Scope and our role
 
 2.1 **Users.** We are the controller of personal data about you as a user of the Service, and this Privacy Policy applies to that data.
 
@@ -49,7 +49,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 2.4 If you are a client of one of our users and have a question about your personal data, please contact that user in the first instance. If you contact us, we shall forward your request to the relevant user and assist that user in responding to it.
 
-### 3. Personal data we collect
+## 3. Personal data we collect
 
 3.1 We collect the following categories of personal data:
 
@@ -57,7 +57,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 | --- | --- | --- |
 | Account and contact | Name, email address, telephone number, password (stored only as a secure hash), and verification codes | You |
 | Registration in progress | Information you enter while registering, held only in your browser until you complete registration or close the browser tab | You |
-| Identity and tax | Date of birth, home address, National Insurance number, Unique Taxpayer Reference, VAT registration number and scheme, accounting dates, and Making Tax Digital status | You |
+| Identity and tax | If you choose to provide them, your date of birth and home address. Your National Insurance number, Unique Taxpayer Reference, VAT registration number and scheme, accounting dates, and Making Tax Digital status | You |
 | Business | Business name, email address, telephone number, website and logo, and any bank details you choose to display on invoices | You |
 | Financial records | Invoices, sales, expenses and receipt images. Also other income you record, such as employment, property, savings, dividends, pensions, foreign income, capital gains, benefits in kind and CIS, and contributions such as pension payments. | You, including through imports, which may contain information about other individuals |
 | HMRC information | HMRC business identifiers, obligations and deadlines, tax calculations, Submission receipts and statuses, the access tokens that connect the Service to HMRC, and any liabilities, payments and previous Submissions that HMRC makes available | HMRC, once you connect the Service |
@@ -98,7 +98,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 3.4 **Personal data from third parties.** We receive personal data about you from HMRC and Stripe, as described in clause 3.1, and from public authorities where they contact us in accordance with the law.
 
-### 4. How we use personal data and our lawful bases
+## 4. How we use personal data and our lawful bases
 
 4.1 We process personal data only where we have a lawful basis to do so, as follows:
 
@@ -107,7 +107,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 | Providing the Service and its features, including records, invoices, receipt scanning, imports and exports | Performance of our contract with you |
 | Connecting to HMRC and making the Submissions you approve | Performance of our contract with you |
 | Sending fraud-prevention information to HMRC with each request | Performance of our contract with you, because HMRC does not accept Submissions without this information; and our legitimate interests, and those of HMRC, in detecting and preventing fraud on your tax account |
-| Using your date of birth to confirm that you are at least 18, as HMRC requires, and your home address to correspond with you and to show it on your invoices | Performance of our contract with you |
+| Using your date of birth to confirm that you are at least 18, and your home address as your business and correspondence address, including on your invoices. Neither is sent to HMRC | Performance of our contract with you |
 | Verifying your identity and eligibility, including your age, UK residence and sanctions status, and preventing duplicate Free Plan Accounts | Our legitimate interests in ensuring that the Service is used only by eligible persons and in accordance with the Terms |
 | Taking payment and administering your subscription | Performance of our contract with you |
 | Maintaining our own accounting and tax records | Legal obligation |
@@ -124,13 +124,13 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 4.3 **Marketing Communications.** We shall not send you Marketing Communications unless you have opted in. You may unsubscribe at any time by using the link in any Marketing Communication or by changing your settings in the Service. After you unsubscribe, we keep your email address on a suppression list solely to ensure that we do not contact you again. Unsubscribing does not stop Service Communications, which form part of the Service under clause 19.4 of the Terms.
 
-### 5. Automated processing
+## 5. Automated processing
 
 5.1 When you scan a receipt, Microsoft Azure AI Document Intelligence reads the image and suggests the merchant, date, total and VAT. The Service shows you those suggestions so that you may review and edit them before saving. The Service instructs Microsoft to delete the results as soon as it has read them, including if the scan fails. Under our agreement with Microsoft, Microsoft deletes the image within 24 hours and may not use the image or the results for any other purpose.
 
 5.2 We do not take any significant decision about you, within the meaning of Article 22A of the UK GDPR, based solely on automated processing.
 
-### 6. Recipients of personal data
+## 6. Recipients of personal data
 
 6.1 We share personal data with the following recipients:
 
@@ -154,7 +154,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 6.3 We do not sell personal data or share it for advertising purposes.
 
-### 7. Storage location and international transfers
+## 7. Storage location and international transfers
 
 7.1 **Storage location.**
 
@@ -172,7 +172,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 7.3 Details of these safeguards are available on request at privacy@ledgeraa.com.
 
-### 8. Retention
+## 8. Retention
 
 8.1 We retain personal data for the following periods:
 
@@ -184,7 +184,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 | HMRC access tokens | Until you disconnect the Service from HMRC, delete your Account, or HMRC's 18-month authority expires | To connect to HMRC |
 | Logs of requests to HMRC, including fraud-prevention information | 7 days | Security and fraud prevention |
 | Device identifier | In your browser until you clear your browser data | HMRC fraud-prevention requirements |
-| Verification codes | One hour, or until used | Account security |
+| Verification codes | [One hour], or until used | Account security |
 | Data export files | 7 days, after which the download link expires | To let you retrieve your records |
 | Our billing records | Six years from the end of the financial year to which they relate | Tax and company law record-keeping requirements |
 | Records of Submissions made through the Service (type, period, date and HMRC reference, with no names or amounts) | Six years and three months from the date of the Submission | To answer queries from HMRC or from you about Submissions, and to establish or defend legal claims |
@@ -197,7 +197,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 8.2 **Your record-keeping obligations.** HMRC requires you to keep your business records, generally for at least five years after the 31 January filing deadline for the relevant tax year (six years for VAT records). Please export your records before deleting your Account, as we cannot recover them after deletion.
 
-### 9. Security
+## 9. Security
 
 9.1 We protect personal data with appropriate technical and organisational measures. These include the following:
 
@@ -215,7 +215,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 9.3 No method of transmission or storage is completely secure, and we cannot guarantee the security of personal data. Further information is available on our [Security](https://www.ledgeraa.com/security) page.
 
-### 10. Your rights
+## 10. Your rights
 
 10.1 Subject to certain conditions and exceptions, you have the right to:
 
@@ -245,9 +245,9 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 10.4 **Your right to object.** You may object at any time to our processing of your personal data on the basis of legitimate interests. If you do, we shall stop that processing unless we have compelling legitimate grounds to continue. You may object to direct marketing at any time, without giving a reason.
 
-### 11. Complaints
+## 11. Complaints
 
-11.1 **Complaints to us.** You may complain to us about our processing of your personal data by emailing privacy@ledgeraa.com. Complaints sent to hello@ledgeraa.com shall be treated in the same way. We shall:
+11.1 **Complaints to us.** You may complain to us about our processing of your personal data by emailing privacy@ledgeraa.com [or by using our online complaints form at URL]. Complaints sent to hello@ledgeraa.com shall be treated in the same way. We shall:
 
 (a) acknowledge your complaint within 5 Business Days, and in any event within 30 days of receipt;
 
@@ -263,11 +263,11 @@ Where we have no contract with such an individual, we rely on our legitimate int
 - **Telephone:** 0303 123 1113
 - **Post:** Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF
 
-### 12. Children
+## 12. Children
 
 12.1 The Service is intended only for individuals aged 18 or over. We do not knowingly collect personal data from children. If we become aware that an Account has been registered by a person under 18, we shall close that Account and delete the associated personal data in accordance with section 8.
 
-### 13. Cookies and similar technologies
+## 13. Cookies and similar technologies
 
 13.1 We use only the cookies and similar technologies that are strictly necessary for the Service. We do not use advertising or tracking cookies.
 
@@ -275,6 +275,6 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 13.3 Further information is set out in our [Cookie Policy](https://www.ledgeraa.com/cookies).
 
-### 14. Changes to this Privacy Policy
+## 14. Changes to this Privacy Policy
 
 14.1 We may update this Privacy Policy from time to time. We shall notify you by email not less than 30 days before any material change takes effect. Where a change is required sooner for legal, regulatory or security reasons, we shall notify you as soon as reasonably practicable. The effective date of each version is shown at the top of this Privacy Policy.

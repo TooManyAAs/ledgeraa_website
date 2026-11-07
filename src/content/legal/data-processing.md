@@ -1,8 +1,8 @@
 **Version 1.0 · Effective 1 November 2026**
 
-This Data Processing Agreement (the "DPA") forms part of the agreement between you and Ledgeraa LTD ("Ledgeraa") under the [Ledgeraa Terms of Service](https://www.ledgeraa.com/terms) (the "Terms"). It applies where Ledgeraa processes Customer Personal Data on your behalf in providing the Service, and sets out the terms required by Article 28(3) of the UK GDPR. You accept this DPA by accepting the Terms, and no separate signature is required.
+This Data Processing Agreement (the **"DPA"**) forms part of the agreement between you and Ledgeraa LTD (**"Ledgeraa"**) under the [Ledgeraa Terms of Service](https://www.ledgeraa.com/terms) (the **"Terms"**). It applies where Ledgeraa processes Customer Personal Data on your behalf in providing the Service, and sets out the terms required by Article 28(3) of the UK GDPR. You accept this DPA by accepting the Terms, and no separate signature is required.
 
-### 1. Definitions and interpretation
+## 1. Definitions and interpretation
 
 1.1 Capitalised terms not defined in this DPA have the meanings given in the Terms. In this DPA:
 
@@ -28,7 +28,7 @@ This Data Processing Agreement (the "DPA") forms part of the agreement between y
 
 1.3 Clause 1.2 of the Terms applies to this DPA. References to clauses are to clauses of this DPA unless they are expressed to be clauses of the Terms.
 
-### 2. Roles and scope
+## 2. Roles and scope
 
 2.1 In respect of Customer Personal Data, you are the controller and Ledgeraa is your processor.
 
@@ -56,7 +56,7 @@ This Data Processing Agreement (the "DPA") forms part of the agreement between y
 
 (b) Clause 2.2 applies to you only to the extent that Data Protection Law applies to you.
 
-### 3. Ledgeraa's obligations
+## 3. Ledgeraa's obligations
 
 3.1 **Documented instructions.** Ledgeraa shall process Customer Personal Data only on your documented instructions, including with regard to transfers of Customer Personal Data to a third country or an international organisation, unless required to do so by domestic law to which Ledgeraa is subject.
 
@@ -137,7 +137,7 @@ Where that information cannot be provided at the same time, it may be provided i
 
 3.9 **Ledgeraa's own purposes.**
 
-(a) Ledgeraa may use Customer Personal Data to create statistics about use of the Service ("Aggregated Statistics"). Aggregated Statistics are aggregated and anonymised so that no individual is identified or identifiable, taking into account all means reasonably likely to be used. Ledgeraa shall use for that purpose only the minimum Customer Personal Data necessary. It shall not attempt to re-identify any individual from Aggregated Statistics, and shall not disclose Aggregated Statistics in a form that identifies you or your Business.
+(a) Ledgeraa may use Customer Personal Data to create statistics about use of the Service (**"Aggregated Statistics"**). Aggregated Statistics are aggregated and anonymised so that no individual is identified or identifiable, taking into account all means reasonably likely to be used. Ledgeraa shall use for that purpose only the minimum Customer Personal Data necessary. It shall not attempt to re-identify any individual from Aggregated Statistics, and shall not disclose Aggregated Statistics in a form that identifies you or your Business.
 
 (b) Where Ledgeraa processes Customer Personal Data for the purposes described in clause 3.9(a), or in clause 6.5(e) or 11.2 of the Terms, it does so as a controller in its own right, in accordance with Data Protection Law and the Privacy Policy, and not on your behalf. Aggregated Statistics are not Customer Personal Data.
 
@@ -163,7 +163,7 @@ Where that information cannot be provided at the same time, it may be provided i
 
 Ledgeraa acquires no rights in Customer Personal Data other than those granted in clause 10.2 of the Terms.
 
-### 4. Sub-processors
+## 4. Sub-processors
 
 4.1 **General authorisation.** You give Ledgeraa general written authorisation to engage Sub-processors. The current Sub-processors are listed on the [Sub-processors Page](https://www.ledgeraa.com/subprocessors).
 
@@ -177,7 +177,7 @@ Ledgeraa acquires no rights in Customer Personal Data other than those granted i
 
 4.4 **Sub-processor terms.** Ledgeraa shall engage each Sub-processor under a written contract that imposes data protection obligations providing no less protection for Customer Personal Data than those set out in this DPA. In particular, the contract shall provide sufficient guarantees that the Sub-processor will implement appropriate technical and organisational measures, so that the processing meets the requirements of Data Protection Law. Where a Sub-processor fails to fulfil its data protection obligations, Ledgeraa shall remain fully liable to you for the performance of that Sub-processor's obligations, subject to clause 6.
 
-### 5. International transfers
+## 5. International transfers
 
 5.1 You authorise Ledgeraa and its Sub-processors to transfer Customer Personal Data to the countries identified on the Sub-processors Page. Ledgeraa shall not otherwise transfer Customer Personal Data outside the United Kingdom.
 
@@ -191,7 +191,7 @@ Ledgeraa acquires no rights in Customer Personal Data other than those granted i
 
 5.4 Unless prohibited by law, Ledgeraa shall notify you without undue delay if it receives a legally binding request from a public authority for disclosure of Customer Personal Data. It shall disclose only the minimum Customer Personal Data necessary to comply.
 
-### 6. Liability
+## 6. Liability
 
 6.1 Ledgeraa's liability arising out of or in connection with this DPA is subject to clause 14 of the Terms, save that:
 
@@ -201,7 +201,7 @@ Ledgeraa acquires no rights in Customer Personal Data other than those granted i
 
 6.2 Nothing in this DPA or the Terms limits or excludes any liability of either party to a data subject under Article 82 of the UK GDPR, or any liability that cannot lawfully be limited or excluded.
 
-### 7. General
+## 7. General
 
 7.1 **Duration.** This DPA remains in force for as long as Ledgeraa processes Customer Personal Data on your behalf.
 
@@ -213,7 +213,7 @@ Ledgeraa acquires no rights in Customer Personal Data other than those granted i
 
 7.5 **Survival.** Clauses 3.2, 3.6, 3.7, 3.10 and 6 survive for as long as Ledgeraa or any Sub-processor holds Customer Personal Data.
 
-### Annex 1: Details of processing
+## Annex 1: Details of processing
 
 | Item | Details |
 | --- | --- |
@@ -226,7 +226,7 @@ Ledgeraa acquires no rights in Customer Personal Data other than those granted i
 | Recipients | HMRC, as an independent controller (clause 2.4) |
 | Sub-processors | As listed on the Sub-processors Page |
 
-### Annex 2: Technical and organisational measures
+## Annex 2: Technical and organisational measures
 
 - **Encryption.** Data is encrypted in transit using TLS and at rest. HMRC access tokens are additionally encrypted and are never sent to users' browsers.
 - **Segregation.** Each user's data is segregated by database access controls (row-level security). Files are held in per-user storage locations and are made available only through time-limited links.

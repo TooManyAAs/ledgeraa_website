@@ -10,7 +10,7 @@
 > - Deleting your Account permanently deletes your records after 7 days. You must keep your own copies (clause 6).
 > - You can unsubscribe from marketing at any time. While your Account is open, you cannot opt out of messages about your Account, payments, security or HMRC (clause 19).
 
-### 1. Definitions and interpretation
+## 1. Definitions and interpretation
 
 1.1 In these Terms, the following definitions apply:
 
@@ -32,7 +32,7 @@
 - **"HMRC"** means His Majesty's Revenue and Customs.
 - **"HMRC Deadline"** means any date by which HMRC requires a Submission to be made or tax to be paid.
 - **"Ledgeraa"**, **"we"**, **"us"** and **"our"** mean Ledgeraa LTD.
-- **"Making Tax Digital"** means HMRC's Making Tax Digital for Income Tax and Making Tax Digital for VAT regimes.
+- **"Making Tax Digital"** means HMRC's Making Tax Digital for Income Tax regime.
 - **"Marketing Communications"** means messages sent to you by email, text message or in-app message that promote the products, services, features or offers of Ledgeraa or of any other person.
 - **"Paid Plan"** means any Plan for which Fees are payable, including the Standard and Unlimited Plans.
 - **"Plan"** means the Free Plan or a Paid Plan.
@@ -40,7 +40,7 @@
 - **"Privacy Policy"** means Ledgeraa's privacy policy, published at ledgeraa.com/privacy.
 - **"Service"** means the Ledgeraa web application, the website at ledgeraa.com, and all related services provided by Ledgeraa.
 - **"Service Communications"** has the meaning given in clause 19.3.
-- **"Submission"** means any quarterly update, VAT return, year-end adjustment, final declaration or other information sent to HMRC through the Service.
+- **"Submission"** means any quarterly update, year-end adjustment, final declaration or other information sent to HMRC through the Service.
 - **"Third-Party Service"** means any service provided by a person other than Ledgeraa on which the Service relies or to which it connects, including HMRC's systems, Stripe and Microsoft Azure.
 - **"You"** and **"your"** mean the individual who registers the Account.
 
@@ -52,7 +52,7 @@
 - (d) a reference to legislation includes that legislation as amended, extended or re-enacted from time to time; and
 - (e) the singular includes the plural, and vice versa.
 
-### 2. About Ledgeraa and these Terms
+## 2. About Ledgeraa and these Terms
 
 2.1 Ledgeraa LTD is a private limited company registered in England and Wales under company number 17344886. Its registered office is at 167-169 Great Portland Street, 5th Floor, London, W1W 5PF. Ledgeraa may be contacted at hello@ledgeraa.com.
 
@@ -72,7 +72,7 @@
 - (b) Ledgeraa does not file an individual copy of the Agreement for you. Each version of these Terms remains available at ledgeraa.com/terms.
 - (c) The Agreement is concluded in English.
 
-### 3. Eligibility
+## 3. Eligibility
 
 3.1 To register for and use the Service, you must:
 
@@ -96,7 +96,7 @@ You agree to notify Ledgeraa promptly if any of these statements ceases to be tr
 - (a) nothing in these Terms affects your statutory rights; and
 - (b) the provisions of these Terms expressed to apply to Consumers apply to you.
 
-### 4. Your Account
+## 4. Your Account
 
 4.1 **Accuracy of information.** You agree to provide accurate, complete and current information when registering your Account. This includes your National Insurance number, your Unique Taxpayer Reference and, where applicable, your VAT registration number.
 
@@ -117,7 +117,7 @@ You are responsible for all activity carried out through your Account.
 
 4.6 **Verification.** Ledgeraa may take reasonable steps to verify your identity and eligibility. It may decline to open an Account, or suspend or close an Account that does not satisfy clause 3.1.
 
-### 5. Plans, Fees and billing
+## 5. Plans, Fees and billing
 
 5.1 **Free Plan.** The Free Plan is provided free of charge, and you will not be charged unless you select a Paid Plan.
 
@@ -159,7 +159,7 @@ You are responsible for all activity carried out through your Account.
 - (b) restrict Automated Features; or
 - (c) require you to move to an appropriate Plan.
 
-### 6. Cancellation, refunds and Account closure
+## 6. Cancellation, refunds and Account closure
 
 6.1 **Cancellation.** You may cancel a Paid Plan at any time in Settings by selecting the Free Plan.
 
@@ -191,29 +191,30 @@ Otherwise, Fees for a renewal are not refundable once the new Billing Period has
 - (b) Deletion takes place 7 days after your request. Signing in to your Account during that period cancels the deletion.
 - (c) After 7 days, Ledgeraa will permanently delete your Account and all Customer Data, including records previously submitted to HMRC.
 - (d) Copies held in backups are deleted when those backups expire, within 7 days.
-- (e) Ledgeraa retains only: as described in the Privacy Policy.
-    - its own billing records, for six years;
-    - a record of each Submission made through the Service, showing its type, period, date and HMRC reference but no names or amounts, for six years and three months;
-    - support correspondence, for two years; records of data protection requests and complaints, for three years; records of marketing consent and a marketing suppression list; and
-    - information reasonably required to establish or defend legal claims, or to prevent or investigate fraud,
+- (e) Ledgeraa retains only:
+  - its own billing records, for six years;
+  - a record of each Submission made through the Service, showing its type, period, date and HMRC reference but no names or amounts, for six years and three months;
+  - support correspondence, for two years; records of data protection requests and complaints, for three years; records of marketing consent and a marketing suppression list; and
+  - information reasonably required to establish or defend legal claims, or to prevent or investigate fraud,
+
+  as described in the Privacy Policy.
 
 6.6 **Your record-keeping obligations.** HMRC requires you to keep your business records, generally for at least five years after the 31 January filing deadline for the relevant tax year (six years for VAT records). Ledgeraa cannot recover Customer Data after deletion. Your record-keeping obligations continue regardless of the termination of the Agreement.
 
 6.7 **Effect on Paid Plans.** Deletion of your Account ends any Paid Plan. Fees will not be refunded except under clause 6.2 or 6.4.
 
-### 7. HMRC and Making Tax Digital
+## 7. HMRC and Making Tax Digital
 
-7.1 **Nature of the Service.** The Service is software that enables you to keep digital records and to make Submissions yourself under:
+7.1 **Nature of the Service.** The Service is software that enables you to keep digital records and to make Submissions yourself under Making Tax Digital for Income Tax, namely quarterly updates and the final declaration. The Service does not submit VAT returns. Features that record VAT in your records, or remind you of VAT deadlines, are provided for bookkeeping only.
 
-- (a) Making Tax Digital for Income Tax: quarterly updates and the final declaration; and
-- (b) Making Tax Digital for VAT: VAT returns.
+Connection to HMRC and the making of Submissions are not yet available. Until they are, the Service sends no information to HMRC. Ledgeraa shall notify you by email, or by notice within the Service, when they become available.
 
 [Ledgeraa is listed by HMRC as recognised software for Making Tax Digital.] HMRC does not endorse or recommend any software product.
 
 7.2 **Authorisation.** You authorise the Service on HMRC's own sign-in page.
 
 - (a) Ledgeraa does not see or store your HMRC sign-in credentials.
-- (b) HMRC issues an access token, which Ledgeraa stores only in encrypted form on its servers. The token allows the Service to retrieve your Self Assessment and VAT information, and to make the Submissions you approve.
+- (b) HMRC issues an access token, which Ledgeraa stores only in encrypted form on its servers. The token allows the Service to retrieve your Self Assessment information and to make the Submissions you approve. HMRC's authorisation page also lists access to your VAT information, so that the same authorisation may be used if VAT features are added to the Service.
 - (c) HMRC's authority lasts for up to 18 months, after which you must authorise the Service again.
 - (d) You may revoke the authority at any time, in Settings or through HMRC's "Manage authorised applications" service.
 
@@ -266,7 +267,7 @@ Otherwise, Fees for a renewal are not refundable once the new Billing Period has
 
 7.14 **Tax calculations.** Tax figures shown in the Service are either calculated by HMRC or estimated by Ledgeraa from Customer Data. They are provided for information only, and you should verify them before relying on them.
 
-### 8. Automated Features, imports and third-party data
+## 8. Automated Features, imports and third-party data
 
 8.1 **Receipt scanning.** On Paid Plans, the Service can read an image of a receipt and suggest the merchant, date, total and VAT, using Microsoft Azure AI Document Intelligence. Limits on the number of scans are described on the Pricing Page.
 
@@ -276,13 +277,13 @@ Otherwise, Fees for a renewal are not refundable once the new Billing Period has
 
 8.4 **Recurring records and imports.** Recurring records are generated on the schedule you set. Imports are processed using the column mappings you select. You agree to check the resulting records.
 
-### 9. No professional advice
+## 9. No professional advice
 
 9.1 Ledgeraa provides software and general information only. Nothing in the Service, in Ledgeraa's help articles or emails, or in any support communication constitutes tax, accounting, legal or financial advice.
 
 9.2 You should obtain advice from a suitably qualified professional where appropriate. HMRC's guidance at gov.uk is a useful starting point.
 
-### 10. Customer Data
+## 10. Customer Data
 
 10.1 **Ownership.** As between you and Ledgeraa, you own all Customer Data.
 
@@ -305,10 +306,10 @@ Otherwise, Fees for a renewal are not refundable once the new Billing Period has
 - (a) Ledgeraa maintains regular backups of the Service. You should nevertheless export your Customer Data regularly and keep your own copies, in particular of your Submissions.
 - (b) Subject to clause 14.1, Customer Data may be lost or corrupted because Ledgeraa breaches the Agreement or fails to use reasonable care and skill. If so, Ledgeraa shall use reasonable endeavours to restore it from the most recent backup it holds. If you are not a Consumer, this is your sole remedy for that loss or corruption.
 - (c) Ledgeraa is not liable for any loss of Customer Data that results from:
-    - deletion instructed by you; or
-    - suspension or termination in accordance with these Terms.
+  - deletion instructed by you; or
+  - suspension or termination in accordance with these Terms.
 
-### 11. Acceptable use
+## 11. Acceptable use
 
 11.1 You must not, and must not permit any other person to:
 
@@ -328,7 +329,7 @@ Otherwise, Fees for a renewal are not refundable once the new Billing Period has
 
 11.3 You represent that you are not a person subject to sanctions administered by the United Kingdom. You agree not to access or use the Service in breach of any applicable sanctions or export control laws.
 
-### 12. Availability, changes and Beta Features
+## 12. Availability, changes and Beta Features
 
 12.1 **Availability.** Ledgeraa shall use reasonable endeavours to make the Service available, but does not guarantee that it will be available without interruption. Where reasonably practicable, Ledgeraa will carry out planned maintenance outside UK business hours.
 
@@ -351,7 +352,7 @@ Ledgeraa shall notify you as soon as reasonably practicable.
 - (b) Beta Features are excluded from clauses 6.2(c) and 14.4.
 - (c) Subject to clause 14.1, Ledgeraa has no liability arising from your use of Beta Features.
 
-### 13. Warranties and disclaimers
+## 13. Warranties and disclaimers
 
 13.1 Ledgeraa shall provide the Service with reasonable care and skill.
 
@@ -369,7 +370,7 @@ Ledgeraa shall notify you as soon as reasonably practicable.
 - (d) Ledgeraa shall use reasonable endeavours to correct any Error of which it becomes aware within a reasonable time. Ledgeraa shall notify you as soon as reasonably practicable if it becomes aware that an Error may have affected a Submission you have made.
 - (e) Ledgeraa's liability for any loss caused by an Error is determined by clause 14.
 
-### 14. Limitation of liability
+## 14. Limitation of liability
 
 14.1 Nothing in the Agreement limits or excludes either party's liability for:
 
@@ -417,7 +418,7 @@ This limit applies whether the liability arises in contract, in tort (including 
 
 14.6 **Basis of the Fees.** The Fees are set by reference to the allocation of risk in clauses 13 to 15.
 
-### 15. Indemnity
+## 15. Indemnity
 
 15.1 **Scope.** This clause 15 applies only where you use the Service otherwise than as a Consumer.
 
@@ -437,7 +438,7 @@ This limit applies whether the liability arises in contract, in tort (including 
 - (c) take reasonable steps to mitigate its loss; and
 - (d) so far as the law allows, give you the information about the claim that you reasonably request.
 
-### 16. Suspension and termination by Ledgeraa
+## 16. Suspension and termination by Ledgeraa
 
 16.1 **Suspension.** Ledgeraa may suspend all or part of the Service or your Account if:
 
@@ -473,7 +474,7 @@ Suspension may take immediate effect where reasonably necessary. Where lawful an
 - clauses 1, 6.5 to 6.7, 10.7, 13, 14, 15, 17, 21 and 22; and
 - any accrued payment obligations.
 
-### 17. Intellectual property and feedback
+## 17. Intellectual property and feedback
 
 17.1 **Ownership.** Ledgeraa and its licensors own all intellectual property rights in the Service, including its software, brand, designs and invoice templates.
 
@@ -485,7 +486,7 @@ Suspension may take immediate effect where reasonably necessary. Where lawful an
 
 17.5 **Publicity.** Ledgeraa shall not use your name or trade marks in its marketing without your prior consent.
 
-### 18. Third-Party Services
+## 18. Third-Party Services
 
 18.1 The Service relies on Third-Party Services, including:
 
@@ -497,7 +498,7 @@ Suspension may take immediate effect where reasonably necessary. Where lawful an
 
 18.2 Ledgeraa does not control, and is not responsible for, the acts, omissions, availability or terms of any Third-Party Service. Ledgeraa may replace the provider of any Third-Party Service, subject to any notice required under the DPA.
 
-### 19. Data protection and communications
+## 19. Data protection and communications
 
 19.1 The Privacy Policy explains how Ledgeraa processes your personal data.
 
@@ -518,7 +519,7 @@ Suspension may take immediate effect where reasonably necessary. Where lawful an
 
 19.5 **Marketing Communications.** Ledgeraa shall send you Marketing Communications only if you have consented to receive them. You may withdraw your consent at any time, free of charge, as described in clause 4.3 of the Privacy Policy. Withdrawing your consent does not affect your Account, your Plan or the Service.
 
-### 20. Changes to these Terms
+## 20. Changes to these Terms
 
 20.1 **Material changes.** Ledgeraa may amend these Terms. For material changes, it shall give you not less than 30 days' notice by email.
 
@@ -530,7 +531,7 @@ Suspension may take immediate effect where reasonably necessary. Where lawful an
 
 20.3 **Versions.** Each version of these Terms is dated. Previous versions are available on request.
 
-### 21. Complaints, governing law and jurisdiction
+## 21. Complaints, governing law and jurisdiction
 
 21.1 **Complaints.** Complaints should be sent to hello@ledgeraa.com. Ledgeraa shall acknowledge a complaint within 5 Business Days and aims to resolve it within 30 days. Complaints about the processing of personal data are handled in accordance with the Privacy Policy.
 
@@ -541,7 +542,7 @@ Suspension may take immediate effect where reasonably necessary. Where lawful an
 - (a) If you are not a Consumer, the courts of England and Wales have exclusive jurisdiction.
 - (b) If you are a Consumer, you may bring proceedings in the courts of England and Wales or, if you live in Scotland or Northern Ireland, in the courts of that part of the United Kingdom.
 
-### 22. General
+## 22. General
 
 22.1 **Notices and electronic communications.**
 
