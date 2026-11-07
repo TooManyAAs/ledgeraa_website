@@ -18,7 +18,6 @@ import {
   Grid,
   Card,
   IconCircle,
-  Illustration,
 } from "@ds/primitives";
 import { SIGNUP_URL, PLANS, type PlanId } from "@/config/site";
 
@@ -98,15 +97,24 @@ export function PricingPage() {
       <Nav current="/pricing" />
 
       <main>
-        {/* Header */}
+        {/* Header: title, then the three plan cards do the describing, then the
+            honest-pricing line + CTA underneath. */}
         <Section background="paper" spacing="lg">
-          <Container width="narrow">
-            <div className="text-center">
-              <Eyebrow withDot>Simple and honest pricing</Eyebrow>
-              <Heading level="display-lg" as="h1" className="mt-6">
-                Sole trader bookkeeping and MTD pricing: free, £4.99 or £7.99
-              </Heading>
-              <Lede className="mt-5" align="center">
+          <Container>
+            <Heading level="display-lg" as="h1" className="text-center">
+              Simple and honest pricing
+            </Heading>
+
+            <div className="mt-12">
+              <PricingPlans compact />
+              <p className="mt-6 text-center text-sm text-[var(--color-ink-muted)]">
+                Per year: Standard £{annual("standard")}, Unlimited £
+                {annual("unlimited")}.
+              </p>
+            </div>
+
+            <div className="mx-auto mt-12 max-w-[40rem] text-center">
+              <Lede align="center">
                 No add-ons, no first-year discount that doubles in year two. The
                 price you see is the price you pay, always.
               </Lede>
@@ -120,22 +128,7 @@ export function PricingPage() {
                   Start Now
                 </Button>
               </div>
-              <Illustration
-                src="/illustrations/planning.svg"
-                className="mx-auto mt-12 max-w-[260px] md:max-w-[300px]"
-              />
             </div>
-          </Container>
-        </Section>
-
-        {/* Three plan cards (no extra section chrome - header above sets context) */}
-        <Section background="canvas" spacing="sm">
-          <Container>
-            <PricingPlans compact />
-            <p className="mt-6 text-center text-sm text-[var(--color-ink-muted)]">
-              Per year: Standard £{annual("standard")}, Unlimited £
-              {annual("unlimited")}.
-            </p>
           </Container>
         </Section>
 
