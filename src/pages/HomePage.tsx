@@ -340,7 +340,7 @@ function Hero() {
   return (
     <Section background="paper" spacing="lg" className="overflow-hidden">
       <Container width="wide">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <div>
             {/* The H1 carries the searched-for words; the big tagline keeps
                 its look as a styled <p>. */}

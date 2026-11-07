@@ -192,7 +192,7 @@ export function PricingPage() {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
- * ComingSoon - the roadmap. Four features on the way, included as they land.
+ * ComingSoon - the roadmap. Three features on the way, included as they land.
  * Tinted cards + a "Coming soon" pill so it reads as momentum, not a to-do.
  * ──────────────────────────────────────────────────────────────────────── */
 const ROADMAP: { icon: LucideIcon; title: string; body: string }[] = [
@@ -229,7 +229,7 @@ function ComingSoon() {
           </Lede>
         </div>
 
-        <Grid cols={{ base: 1, md: 2, lg: 4 }} gap={5} className="mt-12">
+        <Grid cols={{ base: 1, md: 3 }} gap={5} className="mx-auto mt-12 max-w-4xl">
           {ROADMAP.map(({ icon: Icon, title, body }) => (
             <Card key={title} variant="tinted" padding="md" interactive className="flex flex-col">
               <div className="flex items-center justify-between">
