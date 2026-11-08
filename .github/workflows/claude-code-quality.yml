@@ -32,7 +32,7 @@ jobs:
       pull-requests: write # post findings as PR comments
       id-token: write # used by the Claude action for auth handshakes
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Report path
         id: meta
