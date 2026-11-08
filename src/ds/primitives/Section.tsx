@@ -1,21 +1,12 @@
 import type { ReactNode } from "react";
 import { cn } from "@ds/cn";
 
-type Background =
-  | "canvas"
-  | "canvas-cool"
-  | "canvas-soft"
-  | "canvas-tinted"
-  | "white"
-  | "dark"
-  | "paper";
+type Background = "canvas" | "tinted" | "white" | "dark" | "paper";
 type Spacing = "sm" | "base" | "lg" | "none";
 
 const backgrounds: Record<Background, string> = {
   canvas: "bg-[var(--color-canvas)]",
-  "canvas-cool": "bg-[var(--color-canvas-cool)]",
-  "canvas-soft": "bg-[var(--color-canvas-soft)]",
-  "canvas-tinted": "bg-[var(--color-canvas-tinted)]",
+  tinted: "bg-[var(--color-canvas-tinted)]",
   white: "bg-white",
   dark: "bg-aurora text-white",
   paper: "bg-paper",
@@ -28,13 +19,7 @@ const spacings: Record<Spacing, string> = {
   lg: "py-24 md:py-32",
 };
 
-/**
- * Section - full-width band that sets vertical rhythm and an optional
- * background. Always pair with a <Container> for horizontal width.
- *
- * Visual rule: backgrounds use design tokens only. Patterns NEVER override
- * this with arbitrary colors.
- */
+/** Full-width band: vertical rhythm + background. Pair with <Container> for width. */
 export function Section({
   background = "canvas",
   spacing = "base",

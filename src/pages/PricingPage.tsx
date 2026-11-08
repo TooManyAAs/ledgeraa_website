@@ -1,4 +1,4 @@
-import { ArrowRight, Landmark, Car, UserCheck } from "lucide-react";
+import { ArrowRight, Landmark, Car, UserCheck, Send } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import {
   Nav,
@@ -20,6 +20,7 @@ import {
   IconCircle,
 } from "@ds/primitives";
 import { SIGNUP_URL, PLANS, type PlanId } from "@/config/site";
+import { Seo } from "@/Seo";
 
 /** Yearly cost of a plan, derived from its monthly price in site.ts. */
 function annual(id: PlanId) {
@@ -27,7 +28,6 @@ function annual(id: PlanId) {
   const monthly = Number(plan?.priceMain.replace(/[^0-9.]/g, "") ?? 0);
   return (monthly * 12).toFixed(2);
 }
-import { Seo } from "@/Seo";
 
 const pricingFaqs: FaqEntry[] = [
   {
@@ -60,9 +60,9 @@ const pricingFaqs: FaqEntry[] = [
     question: "Is Making Tax Digital included?",
     answer: (
       <>
-        Full MTD submission to HMRC is included on the Standard and Unlimited
-        plans, with no add-on fees. It is not part of the Free plan. Ledgeraa is
-        (soon) HMRC-recognised software.
+        MTD submissions to HMRC are coming soon, on the Standard and Unlimited
+        plans with no add-on fees. They won't be part of the Free plan. We're
+        waiting on HMRC recognition before we switch them on.
       </>
     ),
   },
@@ -97,8 +97,6 @@ export function PricingPage() {
       <Nav current="/pricing" />
 
       <main>
-        {/* Header: title, then the three plan cards do the describing, then the
-            honest-pricing line + CTA underneath. */}
         <Section background="paper" spacing="lg">
           <Container>
             <Heading level="display-lg" as="h1" className="text-center">
@@ -106,7 +104,7 @@ export function PricingPage() {
             </Heading>
 
             <div className="mt-12">
-              <PricingPlans compact />
+              <PricingPlans />
               <p className="mt-6 text-center text-sm text-[var(--color-ink-muted)]">
                 Per year: Standard £{annual("standard")}, Unlimited £
                 {annual("unlimited")}.
@@ -132,23 +130,19 @@ export function PricingPage() {
           </Container>
         </Section>
 
-        {/* Full comparison table */}
         <PricingTable
           eyebrow="Compare plans"
           heading="Compare Free, Standard and Unlimited"
         />
 
-        {/* What's coming next */}
         <ComingSoon />
 
-        {/* Pricing FAQ */}
         <FaqAccordion
           eyebrow="Pricing questions"
           heading="Pricing questions: what Free, Standard and Unlimited include"
           items={pricingFaqs}
         />
 
-        {/* Exit CTA */}
         <Section background="dark" spacing="lg">
           <Container width="narrow">
             <div className="text-center">
@@ -184,11 +178,12 @@ export function PricingPage() {
   );
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
- * ComingSoon - the roadmap. Three features on the way, included as they land.
- * Tinted cards + a "Coming soon" pill so it reads as momentum, not a to-do.
- * ──────────────────────────────────────────────────────────────────────── */
 const ROADMAP: { icon: LucideIcon; title: string; body: string }[] = [
+  {
+    icon: Send,
+    title: "Making Tax Digital submissions",
+    body: "Send your quarterly updates and final declaration to HMRC straight from your records, once HMRC recognises Ledgeraa. Standard and Unlimited.",
+  },
   {
     icon: Landmark,
     title: "Bank connection",
@@ -216,17 +211,17 @@ function ComingSoon() {
             More coming, at no extra charge.
           </Heading>
           <Lede className="mt-4" align="center">
-            We're building the boring admin away, one piece at a time. Every one
-            of these lands on your plan as it's ready. You'll never pay more for
-            what you already have.
+            We're building the boring admin away, one piece at a time. Each of
+            these lands on the plans it's listed for as it's ready. You'll never
+            pay more for what you already have.
           </Lede>
         </div>
 
-        <Grid cols={{ base: 1, md: 3 }} gap={5} className="mx-auto mt-12 max-w-4xl">
+        <Grid cols={2} gap={5} className="mx-auto mt-12 max-w-3xl">
           {ROADMAP.map(({ icon: Icon, title, body }) => (
             <Card key={title} variant="tinted" padding="md" interactive className="flex flex-col">
               <div className="flex items-center justify-between">
-                <IconCircle size={44} tone="lavender">
+                <IconCircle tone="lavender">
                   <Icon className="h-[22px] w-[22px]" strokeWidth={1.9} />
                 </IconCircle>
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-primary-700)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.05em] text-white">

@@ -16,12 +16,6 @@ import {
 import { HMRC_SELF_ASSESSMENT_URL, FIND_ACCOUNTANT_URL } from "@/config/site";
 import { Seo } from "@/Seo";
 
-/**
- * SupportPage (/support) - a few trusted support resources, not documentation.
- * Two jobs held in tension: point users to the right external help (HMRC,
- * a chartered accountant) AND disclaim liability, especially around tax
- * numbers. Resources read generous; disclaimers read as calm standard terms.
- */
 const RESOURCES: {
   icon: LucideIcon;
   title: string;
@@ -58,7 +52,6 @@ export function SupportPage() {
       <Nav current="/support" />
 
       <main>
-        {/* Hero */}
         <Section background="paper" spacing="lg">
           <Container width="narrow">
             <div className="text-center">
@@ -78,10 +71,9 @@ export function SupportPage() {
           </Container>
         </Section>
 
-        {/* Resource cards */}
         <Section background="canvas" spacing="base">
           <Container>
-            <Grid cols={{ base: 1, md: 2 }} gap={5}>
+            <Grid cols={2} gap={5}>
               {RESOURCES.map(({ icon: Icon, title, body, ctaLabel, href }) => (
                 <Card
                   key={title}
@@ -89,7 +81,7 @@ export function SupportPage() {
                   padding="lg"
                   className="flex flex-col"
                 >
-                  <IconCircle size={44} tone="lavender">
+                  <IconCircle tone="lavender">
                     <Icon className="h-[22px] w-[22px]" strokeWidth={1.9} />
                   </IconCircle>
                   <h3 className="mt-5 text-[19px] font-bold tracking-[-0.01em] text-[var(--color-ink)]">
@@ -116,12 +108,11 @@ export function SupportPage() {
           </Container>
         </Section>
 
-        {/* Disclaimers - calm, standard terms, set apart from the friendly cards */}
         <Section background="white" spacing="base">
           <Container width="narrow">
             <Card variant="soft" padding="lg">
               <div className="flex items-center gap-3">
-                <IconCircle size={44} tone="neutral">
+                <IconCircle tone="neutral">
                   <Info className="h-[22px] w-[22px]" strokeWidth={1.9} />
                 </IconCircle>
                 <h2 className="text-[19px] font-bold tracking-[-0.01em] text-[var(--color-ink)]">

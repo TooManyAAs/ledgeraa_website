@@ -3,14 +3,7 @@ import { Container, Section, Eyebrow, Heading } from "@ds/primitives";
 import { cn } from "@ds/cn";
 import { PLANS, COMPARE_ROWS, type CompareRow } from "@/config/site";
 
-/**
- * PricingTable - full feature comparison, feature rows × 3 plan columns.
- *
- * The featured plan's column is tinted the whole way down so the eye tracks
- * it. Cells are either a tick / dash (boolean) or a short string. On mobile
- * the table scrolls horizontally inside a rounded frame (plan names stay as
- * the sticky header row).
- */
+/** Feature rows × plan columns from `COMPARE_ROWS`; the featured plan column is tinted. */
 export function PricingTable({
   eyebrow = "Compare plans",
   heading = "Everything, side by side",

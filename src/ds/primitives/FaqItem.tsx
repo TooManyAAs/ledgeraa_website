@@ -1,13 +1,7 @@
 import type { ReactNode } from "react";
 import { cn } from "@ds/cn";
 
-/**
- * FaqItem - uses native <details>/<summary>, zero JS. Styled chevron
- * rotates via CSS when [open] toggles.
- *
- * Compose multiple FaqItems inside a <Stack gap={0}> for the accordion
- * effect; the top/bottom borders coalesce.
- */
+/** Native <details>/<summary> disclosure; the chevron rotates via CSS on [open]. */
 export function FaqItem({
   question,
   children,

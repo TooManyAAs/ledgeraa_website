@@ -89,24 +89,23 @@ export function MtdHubPage() {
         You can, as long as it's connected to HMRC through compatible software
         (often called bridging software). Retyping figures by hand into
         another program doesn't meet the rules. If you'd rather leave the
-        spreadsheet behind, Ledgeraa imports Excel and CSV files for free.{" "}
+        spreadsheet behind, Ledgeraa imports Excel and CSV files on Standard and Unlimited.{" "}
         <a href="/switch-from-spreadsheets">Here's how switching works</a>.
       </p>
 
       <h2>How Ledgeraa helps</h2>
       <ul>
         <li>Plain-English notes on every important field, so you know what each box means.</li>
-        <li>Snap a receipt and the details are filled in for you.</li>
-        <li>A running tax estimate, so the January bill isn't a surprise.</li>
-        <li>Reminders before every deadline, if you want them.</li>
+        <li>Snap a receipt and the details are filled in for you (Standard and Unlimited).</li>
         <li>
-          Quarterly updates and your tax return, guided in-app. Ledgeraa is
-          pending inclusion on HMRC's list of recognised MTD software;
-          submissions go live as soon as recognition is complete.
+          Coming soon: quarterly updates and your tax return, guided in-app,
+          with a running tax estimate and reminders before every deadline.
+          Ledgeraa is pending inclusion on HMRC's list of recognised MTD
+          software, and submissions switch on once recognition is complete.
         </li>
       </ul>
       <p>
-        MTD is included on the Standard plan at £4.99 a month.{" "}
+        MTD submissions will be included on the Standard plan at £4.99 a month.{" "}
         <a href="/pricing">See pricing</a>.
       </p>
     </ContentLayout>

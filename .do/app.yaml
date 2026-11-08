@@ -1,0 +1,40 @@
+# DigitalOcean App Platform spec: Ledgeraa marketing website (static site).
+# Create once with `doctl apps create --spec .do/app.yaml` (or the dashboard);
+# after that every push to main deploys.
+name: ledgeraa-website
+domains:
+  - domain: ledgeraa.com
+    type: PRIMARY
+  - domain: www.ledgeraa.com
+    type: ALIAS
+ingress:
+  rules:
+    - match:
+        authority:
+          exact: www.ledgeraa.com
+        path:
+          prefix: /
+      redirect:
+        authority: ledgeraa.com
+        redirect_code: 301
+    - match:
+        path:
+          prefix: /
+      component:
+        name: web
+static_sites:
+  - name: web
+    source_dir: /
+    github:
+      repo: TooManyAAs/ledgeraa_website
+      branch: main
+      deploy_on_push: true
+    build_command: npm run build
+    output_dir: dist
+    # Every route has its own dist/<route>/index.html (scripts/build-pages.mjs).
+    # Anything else falls back to the SPA, which renders the noindexed 404 page.
+    catchall_document: index.html
+    envs:
+      - key: APP_ORIGIN
+        value: https://app.ledgeraa.com
+        scope: BUILD_TIME

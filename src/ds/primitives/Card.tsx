@@ -1,52 +1,33 @@
 import type { ReactNode } from "react";
 import { cn } from "@ds/cn";
 
-type Variant = "default" | "tinted" | "soft" | "dark" | "bordered";
-type Padding = "sm" | "md" | "lg";
+const variants = {
+  default: "bg-white border border-[var(--color-neutral-100)] shadow-sm",
+  tinted: "bg-[var(--color-primary-50)] border border-[var(--color-primary-100)]",
+  soft: "bg-[var(--color-canvas-soft)] border border-[var(--color-primary-100)]",
+} as const;
 
-const variants: Record<Variant, string> = {
-  default:
-    "bg-white border border-[var(--color-neutral-100)] shadow-sm",
-  tinted:
-    "bg-[var(--color-primary-50)] border border-[var(--color-primary-100)]",
-  soft:
-    "bg-[var(--color-canvas-soft)] border border-[var(--color-primary-100)]",
-  dark:
-    "bg-[var(--color-primary-950)] text-white",
-  bordered:
-    "bg-white border border-[var(--color-neutral-200)]",
-};
-
-const paddings: Record<Padding, string> = {
-  sm: "p-5",
+const paddings = {
   md: "p-6 md:p-7",
   lg: "p-8 md:p-10",
-};
+} as const;
 
-/**
- * Card - base surface primitive. Other card primitives compose this.
- *
- * `interactive` adds the signature site hover lift: translateY(-2px) and a
- * shadow shift sm → md over 220ms. **Nothing else hovers** on the site -
- * one consistent move, applied everywhere.
- */
 export function Card({
   variant = "default",
   padding = "md",
   interactive,
   className,
   children,
-  as: Tag = "div",
 }: {
-  variant?: Variant;
-  padding?: Padding;
+  variant?: keyof typeof variants;
+  padding?: keyof typeof paddings;
+  /** Hover lift: the only hover motion used on the site. */
   interactive?: boolean;
   className?: string;
   children: ReactNode;
-  as?: "div" | "article" | "section";
 }) {
   return (
-    <Tag
+    <div
       className={cn(
         "rounded-2xl",
         variants[variant],
@@ -57,6 +38,6 @@ export function Card({
       )}
     >
       {children}
-    </Tag>
+    </div>
   );
 }

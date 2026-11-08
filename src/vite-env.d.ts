@@ -1,8 +1,7 @@
 /// <reference types="vite/client" />
 
-declare module "*.css" {
-  const content: string;
-  export default content;
+interface ImportMetaEnv {
+  readonly APP_ORIGIN?: string;
 }
 
 declare module "*.md?raw" {

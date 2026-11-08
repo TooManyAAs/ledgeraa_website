@@ -70,9 +70,9 @@ export function MtdDeadlinesPage() {
 
       <h2>Never miss a date</h2>
       <p>
-        Ledgeraa can nudge you before every deadline, so nothing sneaks up on
-        you. <a href={SIGNUP_URL}>Create a free account</a> and switch on
-        reminders.
+        Deadline reminders are coming to Ledgeraa along with MTD submissions.
+        In the meantime, <a href={SIGNUP_URL}>create a free account</a> and get
+        your records ready.
       </p>
     </ContentLayout>
   );

@@ -1,11 +1,7 @@
 import type { ReactNode } from "react";
 import { cn } from "@ds/cn";
 
-/**
- * Lede - the secondary line under a heading. Single variant by design;
- * the tone of the page comes from the H1 + Lede pair, not from a dozen
- * lede sizes.
- */
+/** The secondary line under a heading. */
 export function Lede({
   className,
   children,

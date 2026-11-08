@@ -1,14 +1,8 @@
 /**
- * Post-build step for GitHub Pages.
- *
- * GitHub Pages only knows about files, so without this every route except "/"
- * was served through 404.html with an HTTP 404 status, and every page shared
- * one <title>. This writes one HTML file per route (e.g. dist/pricing.html,
- * which Pages serves at /pricing with a 200), each with its own title,
- * description, canonical, social tags and structured data, plus a noindexed
- * 404.html and a sitemap.xml generated from the same list.
- *
- * Source of truth: src/config/seo-pages.json. Runs after `vite build`.
+ * Post-build: writes one HTML file per route in src/config/seo-pages.json
+ * (dist/pricing/index.html etc., each with its own head tags and JSON-LD) and
+ * sitemap.xml, and adds the Content-Security-Policy meta tag to every page.
+ * Build-time only: the CSP would block Vite's inline dev-server scripts.
  */
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -20,6 +14,22 @@ const seo = JSON.parse(
   readFileSync(join(root, "src/config/seo-pages.json"), "utf8")
 );
 const template = readFileSync(join(dist, "index.html"), "utf8");
+
+// Our static host can't send response headers, so this is the CSP. A meta CSP
+// can't express frame-ancestors; see CLAUDE.md for the headers still missing.
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self'",
+  "style-src 'self'",
+  "img-src 'self' data:",
+  "font-src 'self' data:",
+  "media-src 'self'",
+  "connect-src 'self'",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'none'",
+  "upgrade-insecure-requests",
+].join("; ");
 
 const esc = (s) =>
   String(s)
@@ -47,7 +57,7 @@ const software = {
   applicationCategory: "FinanceApplication",
   operatingSystem: "Web browser",
   description:
-    "Plain-English bookkeeping and Making Tax Digital app for UK sole traders.",
+    "Plain-English bookkeeping app for UK sole traders. Making Tax Digital submissions coming soon.",
   offers: seo.offers.map((o) => ({
     "@type": "Offer",
     name: o.name,
@@ -56,18 +66,16 @@ const software = {
   })),
 };
 
-function headFor({ title, description, url, schema = [], noindex = false }) {
+function headFor({ title, description, url, schema = [] }) {
   const tags = [
     `<title data-static-head>${esc(title)}</title>`,
     `<meta data-static-head name="description" content="${esc(description)}" />`,
-    noindex
-      ? `<meta data-static-head name="robots" content="noindex" />`
-      : `<link data-static-head rel="canonical" href="${esc(url)}" />`,
+    `<link data-static-head rel="canonical" href="${esc(url)}" />`,
     `<meta data-static-head property="og:site_name" content="${esc(seo.siteName)}" />`,
     `<meta data-static-head property="og:type" content="website" />`,
     `<meta data-static-head property="og:title" content="${esc(title)}" />`,
     `<meta data-static-head property="og:description" content="${esc(description)}" />`,
-    url ? `<meta data-static-head property="og:url" content="${esc(url)}" />` : "",
+    `<meta data-static-head property="og:url" content="${esc(url)}" />`,
     `<meta data-static-head property="og:image" content="${esc(image)}" />`,
     `<meta data-static-head name="twitter:card" content="summary_large_image" />`,
   ];
@@ -78,17 +86,22 @@ function headFor({ title, description, url, schema = [], noindex = false }) {
         `<script type="application/ld+json">${JSON.stringify(data).replace(/</g, "\\u003c")}</script>`
       );
   }
-  return tags.filter(Boolean).map((t) => `    ${t}`).join("\n");
+  return tags.map((t) => `    ${t}`).join("\n");
 }
 
 function render(head) {
-  if (!template.includes("</head>")) throw new Error("dist/index.html has no </head>");
-  return template.replace("</head>", `${head}\n  </head>`);
+  const charset = '<meta charset="UTF-8" />';
+  if (!template.includes(charset) || !template.includes("</head>"))
+    throw new Error("dist/index.html is missing <meta charset> or </head>");
+  // The CSP goes before the module script Vite puts in <head>, so it governs it.
+  return template
+    .replace(charset, `${charset}\n    <meta http-equiv="Content-Security-Policy" content="${CSP}" />`)
+    .replace("</head>", `${head}\n  </head>`);
 }
 
+// Directory-style output: the host serves /pricing from pricing/index.html.
 function fileFor(path) {
-  if (path === "/") return join(dist, "index.html");
-  return join(dist, `${path.replace(/^\//, "")}.html`);
+  return join(dist, path.replace(/^\//, ""), "index.html");
 }
 
 for (const page of seo.pages) {
@@ -97,11 +110,6 @@ for (const page of seo.pages) {
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, render(headFor({ ...page, url })));
 }
-
-writeFileSync(
-  join(dist, "404.html"),
-  render(headFor({ ...seo.notFound, noindex: true }))
-);
 
 const sitemap = [
   `<?xml version="1.0" encoding="UTF-8"?>`,
@@ -114,7 +122,5 @@ const sitemap = [
   ``,
 ].join("\n");
 writeFileSync(join(dist, "sitemap.xml"), sitemap);
-if (process.argv.includes("--write-public-sitemap"))
-  writeFileSync(join(root, "public/sitemap.xml"), sitemap);
 
-console.log(`build-pages: wrote ${seo.pages.length} pages, 404.html and sitemap.xml`);
+console.log(`build-pages: wrote ${seo.pages.length} pages and sitemap.xml`);

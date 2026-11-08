@@ -9,11 +9,7 @@ const widths: Record<Width, string> = {
   wide: "max-w-[1280px]",
 };
 
-/**
- * Container - sets a max-width and responsive horizontal gutter.
- *
- * Visual rule: NEVER set colour/border/shadow here. Layout only.
- */
+/** Max-width + responsive horizontal gutter. Layout only. */
 export function Container({
   width = "default",
   className,
