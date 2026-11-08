@@ -50,8 +50,10 @@ npm run test:e2e   # needs a build first; first run: npx playwright install chro
 - These need the org secrets and vars `CLAUDE_CODE_OAUTH_TOKEN`, `REPO_READER_CLIENT_ID` and `REPO_READER_PRIVATE_KEY` shared with this repo.
 
 ## Deploy
-DigitalOcean App Platform static site (`.do/app.yaml`), deployed automatically on merge to `main`. Never deploy manually. The spec also covers:
-- **Domains:** ledgeraa.com is primary. www.ledgeraa.com is an alias that an `ingress` rule 301-redirects to the apex.
+DigitalOcean App Platform static site `ledgeraa-website` (free tier, London), deployed automatically on every push to `prod`. To release, merge `main` → `prod`; this is the same flow as the FE. Never deploy manually.
+
+`.do/app.yaml` is a copy of the live app spec. DO doesn't read it, so apply changes in the dashboard (Settings → App Spec) or with doctl, then update the copy. The spec covers:
+- **Domains:** the `ledgeraa.com` DNS zone is managed by DigitalOcean. ledgeraa.com is primary; www.ledgeraa.com is an alias that the first `ingress` rule 301-redirects to the apex.
 - **Clean URLs:** App Platform serves `/pricing` from `dist/pricing/index.html`, which `scripts/build-pages.mjs` writes for every route. `catchall_document: index.html` sends any other path to the SPA, which renders the noindexed 404 page with a 200 status.
 - HTTP → HTTPS is automatic on App Platform.
 
@@ -62,10 +64,6 @@ DigitalOcean App Platform static site (`.do/app.yaml`), deployed automatically o
 - Permissions-Policy
 
 The Playwright smoke test runs against the built pages with the CSP active, so a change that the CSP would block fails CI. Don't load anything from another origin without updating the CSP in `build-pages.mjs` and the privacy and cookie policies.
-
-Check after the first deploy:
-- `curl -sI https://ledgeraa.com/pricing` returns 200, and its `<title>` is the pricing title, not the home page's.
-- `curl -sI https://www.ledgeraa.com/pricing` returns 301 to `https://ledgeraa.com/pricing`.
 
 ## Follow-up
 Move to an App Platform **service** running nginx (multi-stage Dockerfile + `nginx.conf`), so the site can send real security headers and a real 404 status. The same is planned for the app: `ledgeraa_frontend_1/docs/plans/security-headers-nginx-plan.md`.
