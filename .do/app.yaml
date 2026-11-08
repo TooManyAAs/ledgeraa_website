@@ -1,14 +1,24 @@
 # DigitalOcean App Platform spec: Ledgeraa marketing website (static site).
-# Create once with `doctl apps create --spec .do/app.yaml` (or the dashboard);
-# after that every push to main deploys.
+# Mirrors the live app `ledgeraa-website`. DO doesn't read this file; apply
+# changes to the live app (dashboard → Settings → App Spec, or doctl) and keep
+# this copy in sync. Every push to `prod` deploys.
 name: ledgeraa-website
+region: lon
+features:
+  - buildpack-stack=ubuntu-22
+alerts:
+  - rule: DEPLOYMENT_FAILED
+  - rule: DOMAIN_FAILED
 domains:
   - domain: ledgeraa.com
     type: PRIMARY
+    zone: ledgeraa.com
   - domain: www.ledgeraa.com
     type: ALIAS
+    zone: ledgeraa.com
 ingress:
   rules:
+    # Must stay first: www → apex, keeping the path.
     - match:
         authority:
           exact: www.ledgeraa.com
@@ -18,16 +28,19 @@ ingress:
         authority: ledgeraa.com
         redirect_code: 301
     - match:
+        authority:
+          exact: ""
         path:
           prefix: /
       component:
-        name: web
+        name: ledgeraa-website
 static_sites:
-  - name: web
+  - name: ledgeraa-website
     source_dir: /
+    environment_slug: node-js
     github:
       repo: TooManyAAs/ledgeraa_website
-      branch: main
+      branch: prod
       deploy_on_push: true
     build_command: npm run build
     output_dir: dist
