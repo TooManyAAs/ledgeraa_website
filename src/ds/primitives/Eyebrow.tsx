@@ -10,10 +10,7 @@ const toneClasses: Record<Tone, string> = {
     "bg-white text-[var(--color-ink)] ring-1 ring-[var(--color-neutral-200)]",
 };
 
-/**
- * Eyebrow - the small uppercase tag above section headings. The single
- * biggest "Linear feel" lever in the system. Use one per section, max.
- */
+/** Small uppercase tag above a section heading. */
 export function Eyebrow({
   tone = "purple",
   withDot,
@@ -21,7 +18,6 @@ export function Eyebrow({
   children,
 }: {
   tone?: Tone;
-  /** Adds a small pulsing dot to the left. Use only on the hero. */
   withDot?: boolean;
   className?: string;
   children: ReactNode;

@@ -5,24 +5,10 @@ import { Logo } from "./Logo";
 import { cn } from "@ds/cn";
 import { NAV_LINKS, SIGNIN_URL } from "@/config/site";
 
-const links = NAV_LINKS;
-
-/**
- * Nav - sticky top navigation. Mobile uses a full-screen takeover menu
- * (not a drawer) per the wireframe rule. Desktop is a single horizontal
- * row with the CTA on the right.
- */
-export function Nav({
-  current,
-  ctaHref = SIGNIN_URL,
-}: {
-  /** The current page's path, e.g. "/pricing". Used to underline the active link. */
-  current?: string;
-  ctaHref?: string;
-}) {
+/** Sticky top nav; full-screen menu on mobile. `current` underlines the active link. */
+export function Nav({ current }: { current?: string }) {
   const [open, setOpen] = useState(false);
 
-  // Lock scroll while the mobile menu is open.
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
@@ -34,7 +20,6 @@ export function Nav({
     };
   }, [open]);
 
-  // Close on Escape.
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -61,7 +46,7 @@ export function Nav({
             </a>
 
             <ul className="hidden items-center gap-8 md:flex">
-              {links.map(({ href, label }) => (
+              {NAV_LINKS.map(({ href, label }) => (
                 <li key={href}>
                   <a
                     href={href}
@@ -88,7 +73,7 @@ export function Nav({
             <div className="flex items-center gap-2">
               <div className="hidden md:block">
                 <Button
-                  href={ctaHref}
+                  href={SIGNIN_URL}
                   variant="primary"
                   size="sm"
                   trailing={<ArrowRight className="h-4 w-4" aria-hidden />}
@@ -111,7 +96,6 @@ export function Nav({
         </div>
       </nav>
 
-      {/* Mobile menu - full screen takeover */}
       <div
         id="mobile-menu"
         aria-hidden={!open}
@@ -136,7 +120,7 @@ export function Nav({
           </div>
 
           <ul className="mt-6 flex flex-col">
-            {links.map(({ href, label }) => (
+            {NAV_LINKS.map(({ href, label }) => (
               <li key={href}>
                 <a
                   href={href}
@@ -157,7 +141,7 @@ export function Nav({
 
           <div className="mt-auto pt-6">
             <Button
-              href={ctaHref}
+              href={SIGNIN_URL}
               variant="primary"
               size="lg"
               block

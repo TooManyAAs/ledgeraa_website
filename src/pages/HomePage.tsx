@@ -17,6 +17,7 @@ import {
   FeatureSplit,
   PricingPlans,
   FaqAccordion,
+  DemoMedia,
 } from "@ds/patterns";
 import type { FaqEntry } from "@ds/patterns";
 import {
@@ -34,7 +35,6 @@ import {
 } from "@ds/primitives";
 import { cn } from "@ds/cn";
 import { SIGNUP_URL, SIGNIN_URL } from "@/config/site";
-import { DemoMedia } from "@ds/patterns/visuals/DemoMedia";
 import { Seo } from "@/Seo";
 
 const faqs: FaqEntry[] = [
@@ -57,8 +57,8 @@ const faqs: FaqEntry[] = [
         We're in the process of getting there. Ledgeraa is pending inclusion on
         HMRC's list of recognised Making Tax Digital software. HMRC recognises
         software; it doesn't endorse or recommend any one product, so
-        "recognised" means exactly that: once we've passed their process, you can
-        send your tax straight to them through us.
+        "recognised" means exactly that. Until then, Ledgeraa can't send
+        anything to HMRC.
       </>
     ),
   },
@@ -66,7 +66,9 @@ const faqs: FaqEntry[] = [
     question: "Does Ledgeraa send quarterly updates and the final declaration?",
     answer: (
       <>
-        It's designed to, and will do so as soon as we get HMRC recognition.
+        Not yet. MTD submissions are coming soon, once HMRC recognises
+        Ledgeraa. Until then you can keep your records in Ledgeraa, ready for
+        when they switch on.
       </>
     ),
   },
@@ -83,7 +85,8 @@ const faqs: FaqEntry[] = [
     question: "Can I keep using my spreadsheet?",
     answer: (
       <>
-        Yes. Import your Excel or CSV files any time and carry on from there.{" "}
+        Yes. On Standard and Unlimited you can import your Excel or CSV files
+        any time and carry on from there.{" "}
         <a href="/switch-from-spreadsheets">Here's how switching works</a>.
       </>
     ),
@@ -103,8 +106,8 @@ const faqs: FaqEntry[] = [
     question: "Do I still need an accountant?",
     answer: (
       <>
-        Ledgeraa is a bookkeeping and submission tool. We handle everything as
-        best we can, but your business is unique to you. If you're ever in doubt
+        Ledgeraa is a bookkeeping tool, with MTD submissions coming soon. We
+        handle everything as best we can, but your business is unique to you. If you're ever in doubt
         about anything, it's important to consult an accountant.
       </>
     ),
@@ -164,23 +167,20 @@ export function HomePage() {
         <TrustStrip />
         <EverythingYouNeed />
 
-        {/* ── Feature walkthrough: MTD first (biggest search driver), then
-            five compact features, alternating L/R ── */}
         <div id="features">
           <div id="mtd">
           <FeatureSplit
-            compact
-            eyebrow="Making Tax Digital"
-            heading="Making Tax Digital for sole traders, guided step by step"
-            lede="Making Tax Digital is here, and it can feel daunting. We're here to make sure you don't let digital taxes put you off self-employment. We're (soon) HMRC-recognised and connected, and we guide you through every step. Your updates go straight to HMRC, which means no spreadsheets, no portals, no late-night panic."
+            eyebrow="Making Tax Digital: coming soon"
+            heading="Making Tax Digital for sole traders, guided step by step (coming soon)"
+            lede="Making Tax Digital is here, and it can feel daunting. We're building MTD submissions into Ledgeraa and waiting on HMRC recognition before we switch them on. Once they're live, your updates will go straight to HMRC from the records you already keep here. No spreadsheets, no portals, no late-night panic."
             bullets={[
-              "HMRC-recognised (coming soon). Your numbers never go to a third party",
-              "Quarterly and yearly updates, fully guided in-app",
-              "Nudges and notifications (if you want them) before every deadline, so nothing sneaks up",
+              "HMRC recognition coming soon. Your numbers will never go to a third party",
+              "Quarterly and yearly updates, fully guided in-app (coming soon)",
+              "Deadline reminders before every update (coming soon)",
             ]}
             visual={
               <PhoneFrame>
-                <ScreenMock variant="mtd-done" />
+                <ScreenMock />
               </PhoneFrame>
             }
             orientation="right"
@@ -188,7 +188,6 @@ export function HomePage() {
           />
           </div>
           <FeatureSplit
-            compact
             eyebrow="Invoices & PDFs"
             heading="Unlimited free invoices, customised PDF templates, automated repeats"
             lede="Fill in the details, choose a template, and you're ready to send. Your customer gets a clean, professional PDF with your name (and even your logo) on it."
@@ -208,13 +207,12 @@ export function HomePage() {
             background="white"
           />
           <FeatureSplit
-            compact
             eyebrow="Expenses & receipt scanning"
             heading="Receipt scanning that logs your expenses for you"
             lede="Whether you've just bought ingredients, materials, or shiny new equipment, all you need is a photo of your receipt. Ledgeraa reads it and fills in the details for you, so every expense is logged and ready for your tax return in seconds."
             bullets={[
               "Details captured automatically from a single photo of your receipt",
-              "Just pick the right category and you're ready to submit",
+              "Just pick the right category and save",
               "Set recurring expenses once and let them log themselves",
             ]}
             footnote="Always double-check that the captured details match your receipt. Automated scanning can make mistakes."
@@ -228,7 +226,6 @@ export function HomePage() {
             background="canvas"
           />
           <FeatureSplit
-            compact
             eyebrow="Real-time income logging"
             heading="Log other income: cash jobs, rent, foreign property, and more"
             lede="Cash job? One-off sale? A little rent on the side? Log “other income” the moment it lands, and year-end stops being a scramble through your memory."
@@ -247,7 +244,6 @@ export function HomePage() {
             background="white"
           />
           <FeatureSplit
-            compact
             eyebrow="Plain English support"
             heading="Plain-English help on every tax box"
             lede="Tax forms love a confusing label. We do not. Important fields carry a little plain-English note telling you exactly what's expected of you, and where to find it. So you're never stuck, never second-guessing, never Googling a term at 11pm (unless that's your thing)."
@@ -266,12 +262,11 @@ export function HomePage() {
             background="canvas"
           />
           <FeatureSplit
-            compact
             eyebrow="Easy switching"
             heading="Switch seamlessly from spreadsheets or another app: import Excel and CSV"
-            lede="We know there are many options out there, but Ledgeraa is made exclusively for sole traders like you. That's why we made it really easy to switch and bring all your past records to us, free of charge."
+            lede="We know there are many options out there, but Ledgeraa is made exclusively for sole traders like you. That's why we made it really easy to switch and bring all your past records with you."
             bullets={[
-              "Import invoices, sales records, or expenses as Excel or CSV files",
+              "Import invoices, sales records, or expenses as Excel or CSV files (Standard and Unlimited)",
               "Easy matching of your data to our format",
               "Export your Ledgeraa logs any time, in any date range",
             ]}
@@ -286,20 +281,19 @@ export function HomePage() {
           />
         </div>
 
-        {/* ── Pricing teaser ── */}
         <Section background="canvas" spacing="base" id="pricing">
           <Container>
             <div className="mx-auto max-w-[44rem] text-center">
               <Eyebrow>Pricing</Eyebrow>
               <Heading level="display-md" as="h2" className="mt-5">
-                MTD software for £4.99 a month. Free to start.
+                Bookkeeping for £4.99 a month. Free to start.
               </Heading>
               <Lede className="mt-4" align="center">
                 Three plans tailored to your needs and preferences, no add-ons,
                 no nasty surprises.
               </Lede>
             </div>
-            <PricingPlans compact />
+            <PricingPlans />
             <div className="mt-10 text-center">
               <Button href="/pricing" variant="secondary" size="md">
                 Compare all plans
@@ -308,7 +302,6 @@ export function HomePage() {
           </Container>
         </Section>
 
-        {/* ── FAQ ── */}
         <div id="faq">
         <FaqAccordion
           eyebrow="Common questions"
@@ -323,7 +316,6 @@ export function HomePage() {
         />
         </div>
 
-        {/* ── Final CTA ── */}
         <FinalCta />
       </main>
 
@@ -332,20 +324,15 @@ export function HomePage() {
   );
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
- * Hero - inline (drives to the live app sign-up, not an email waitlist).
- * Keeps the signature bg-paper wash + tilted phone mock.
- * ──────────────────────────────────────────────────────────────────────── */
 function Hero() {
   return (
     <Section background="paper" spacing="lg" className="overflow-hidden">
       <Container width="wide">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
           <div>
-            {/* The H1 carries the searched-for words; the big tagline keeps
-                its look as a styled <p>. */}
+            {/* The H1 carries the search keywords; the tagline is a styled <p>. */}
             <h1 className="m-0">
-              <Eyebrow withDot>Plain-English MTD bookkeeping app for UK sole traders</Eyebrow>
+              <Eyebrow withDot>Plain-English bookkeeping app for UK sole traders</Eyebrow>
             </h1>
             <Heading level="display-xl" as="p" className="mt-6">
               We mind your tax. You mind your business.
@@ -371,7 +358,8 @@ function Hero() {
               </Button>
             </div>
             <p className="mt-4 text-sm text-[var(--color-ink-muted)]">
-              MTD-compliant plan at £4.99/month, always. No 'special' offers.
+              Standard plan at £4.99/month, always. No 'special' offers.
+              Making Tax Digital submissions coming soon.
             </p>
           </div>
 
@@ -387,19 +375,16 @@ function Hero() {
   );
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
- * TrustStrip - hero-adjacent trust signals (highest-impact placement).
- * Compliance-safe wording: "HMRC-recognised", never "approved/endorsed".
- * ──────────────────────────────────────────────────────────────────────── */
+// Wording rule: "HMRC-recognised", never "approved" or "endorsed".
 function TrustStrip() {
   const rowOne = [
     { icon: ScanLine, label: "Scan receipts" },
     { icon: Send, label: "Send invoices" },
-    { icon: LineChart, label: "Get real-time tax estimates" },
+    { icon: LineChart, label: "Track income and expenses" },
   ];
   const rowTwo = [
     { icon: ShieldCheck, label: "HMRC recognition coming soon" },
-    { icon: FileCheck2, label: "Made for Making Tax Digital" },
+    { icon: FileCheck2, label: "Making Tax Digital coming soon" },
     { icon: MessageCircle, label: "Your data stays in the EU" },
   ];
   const renderRow = (items: { icon: LucideIcon; label: string }[]) => (
@@ -442,12 +427,6 @@ function TrustStrip() {
   );
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
- * EverythingYouNeed - overview of the whole scope (Money In / Money Out),
- * placed before the detailed feature walkthrough. Money In carries a green
- * accent so income pops; Money Out is muted neutral (still a check, not a
- * cross - spending isn't "bad", just visually secondary).
- * ──────────────────────────────────────────────────────────────────────── */
 const MONEY_IN = [
   "Create and send professional invoices in seconds",
   "Record your daily sales in a couple of taps",
@@ -485,7 +464,7 @@ function BulletColumn({
   return (
     <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-[var(--color-neutral-200)] md:p-7">
       <div className="flex items-center gap-3">
-        <IconCircle size={44} tone="neutral" className={circleClass}>
+        <IconCircle tone="neutral" className={circleClass}>
           <Icon className="h-[22px] w-[22px]" strokeWidth={1.9} />
         </IconCircle>
         <h3 className="text-[18px] font-bold tracking-[-0.01em] text-[var(--color-ink)]">
@@ -534,7 +513,7 @@ function EverythingYouNeed() {
           />
         </div>
 
-        <Grid cols={{ base: 1, md: 2 }} gap={6} className="mt-12">
+        <Grid cols={2} gap={6} className="mt-12">
           <BulletColumn
             icon={ArrowDownToLine}
             title="Money In"
@@ -553,20 +532,17 @@ function EverythingYouNeed() {
   );
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
- * FinalCta - the page's exit ramp. Dark aurora, links to sign-up.
- * ──────────────────────────────────────────────────────────────────────── */
 function FinalCta() {
   return (
     <Section background="dark" spacing="lg">
       <Container width="narrow">
-        <div className={cn("text-center")}>
+        <div className="text-center">
           <Heading level="display-lg" as="h2" className="text-white">
             Get back to the work you actually enjoy.
           </Heading>
           <p className="mx-auto mt-5 max-w-[36em] text-[length:var(--text-lede)] leading-[var(--text-lede--line-height)] text-[var(--color-primary-200)] text-pretty">
-            Let us take tax off your plate. Send your first invoice or snap your
-            first receipt in the next ten minutes. Free to start, and we'll
+            Let us take tax off your plate. Send your first invoice or log your
+            first expense in the next ten minutes. Free to start, and we'll
             handle the hard part from here.
           </p>
           <div className="mt-9 flex justify-center">

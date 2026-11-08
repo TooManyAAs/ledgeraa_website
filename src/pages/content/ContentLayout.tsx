@@ -16,9 +16,7 @@ import { Seo } from "@/Seo";
 export type RelatedLink = { href: string; label: string };
 
 /**
- * ContentLayout - shared shell for the MTD help hub, guides, comparisons and
- * trade pages: hero (H1 + lede), long-form body in <Prose>, related links,
- * a "not advice" note and the dark sign-up CTA.
+ * Shared shell for the MTD hub, guides, comparison and trade pages.
  */
 export function ContentLayout({
   path,
@@ -29,7 +27,7 @@ export function ContentLayout({
   related,
   updated = "2 November 2026",
   ctaHeading = "Get your books ready for Making Tax Digital.",
-  ctaBody = "Start free with unlimited invoices. Move to Standard for £4.99 a month when you need MTD.",
+  ctaBody = "Start free with unlimited invoices. Standard is £4.99 a month, with MTD submissions coming soon.",
 }: {
   path: string;
   eyebrow: string;

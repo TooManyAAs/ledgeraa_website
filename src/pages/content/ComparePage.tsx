@@ -17,10 +17,10 @@ type Competitor = {
 const LEDGERAA = {
   price: "Free; Standard £4.99 a month; Unlimited £7.99 a month",
   free: "Yes: unlimited invoices and manual expenses (no MTD)",
-  mtd: "Built in on Standard and Unlimited; HMRC recognition pending",
-  vat: "Unlimited plan, for VAT-registered sole traders",
+  mtd: "Coming soon, on Standard and Unlimited (HMRC recognition pending)",
+  vat: "VAT returns coming soon, on Standard and Unlimited",
   bank: "Coming soon",
-  receipts: "Standard: up to 2 scans per expense. Unlimited: no limit",
+  receipts: "Standard: up to 2 scans per expense. Unlimited: up to 20",
 };
 
 const COMPETITORS: Record<string, Competitor> = {
@@ -151,14 +151,15 @@ export function ComparePage({ slug }: { slug: string }) {
         <li>Plain-English notes on every important field, written for people who aren't accountants.</li>
         <li>One honest price: £4.99 a month for Standard, with no first-year discount that doubles later.</li>
         <li>"Other income" in one place, including cash jobs, rent and foreign property.</li>
-        <li>Free Excel and CSV import, and export whenever you like.</li>
+        <li>Excel and CSV import on Standard and Unlimited, and export whenever you like on every plan.</li>
       </ul>
 
       <h2>Which should you choose?</h2>
       <p>
         If you need to send MTD updates through HMRC-recognised software right
-        now, or you need bank feeds today, {c.name} is the safer choice until
-        Ledgeraa's HMRC recognition is complete. If you want the simplest,
+        now, or you need bank feeds today, {c.name} is the safer choice:
+        Ledgeraa's MTD submissions are coming soon, once HMRC recognition is
+        complete. If you want the simplest,
         plain-English way to keep your books ahead of Making Tax Digital,
         start on Ledgeraa's Free plan and see how it feels.
       </p>

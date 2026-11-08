@@ -1,72 +1,22 @@
 import { Check, ArrowRight } from "lucide-react";
-import { Container, Section, Eyebrow, Heading, Lede, Button } from "@ds/primitives";
+import { Button } from "@ds/primitives";
 import { cn } from "@ds/cn";
 import { PLANS, SIGNUP_URL, type MarketingPlan } from "@/config/site";
 
-/**
- * PricingPlans - the three-tier plan cards (Free / Standard / Unlimited).
- *
- * The middle plan (`featured`) gets the brand highlight: primary ring, a
- * lifted position, and a "Most popular" badge in the app's amber accent.
- * Every CTA goes to the real app sign-up. Data comes from `@/config/site`
- * so the cards can never drift from the app's actual tiers.
- *
- * `compact` renders the homepage teaser variant (no section chrome, tighter).
- */
-export function PricingPlans({
-  eyebrow = "Pricing",
-  heading = "One price when you’re ready. Free until then.",
-  lede = "Start free, upgrade when Making Tax Digital kicks in. No first-year discount that doubles later - the price you see is the price you pay.",
-  compact = false,
-}: {
-  eyebrow?: string;
-  heading?: string;
-  lede?: string;
-  compact?: boolean;
-}) {
-  const cards = (
-    <div
-      className={cn(
-        "grid grid-cols-1 gap-6 md:grid-cols-3",
-        // Let the featured card sit slightly proud on desktop.
-        "md:items-start"
-      )}
-    >
-      {PLANS.map((plan) => (
-        <PlanCard key={plan.id} plan={plan} />
-      ))}
-    </div>
-  );
-
-  if (compact) {
-    return (
-      <div className="mt-12">
-        {cards}
-        <Reassurance />
-      </div>
-    );
-  }
-
+/** The three plan cards from `PLANS`, plus the reassurance row. Every CTA goes to app sign-up. */
+export function PricingPlans() {
   return (
-    <Section background="canvas" spacing="base" id="pricing">
-      <Container>
-        <div className="mx-auto max-w-[44rem] text-center">
-          <Eyebrow>{eyebrow}</Eyebrow>
-          <Heading level="display-md" as="h2" className="mt-5">
-            {heading}
-          </Heading>
-          <Lede className="mt-4" align="center">
-            {lede}
-          </Lede>
-        </div>
-        <div className="mt-14">{cards}</div>
-        <Reassurance />
-      </Container>
-    </Section>
+    <div className="mt-12">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:items-start">
+        {PLANS.map((plan) => (
+          <PlanCard key={plan.id} plan={plan} />
+        ))}
+      </div>
+      <Reassurance />
+    </div>
   );
 }
 
-/** Low-commitment reassurance under the plan cards. */
 function Reassurance() {
   const items = ["Cancel anytime", "Free migration", "Your data stays in the EU"];
   return (

@@ -11,15 +11,10 @@ import {
 import { SIGNUP_URL, SIGNIN_URL } from "@/config/site";
 import { Seo } from "@/Seo";
 
-/**
- * JoinPage (/join) - a focused, high-intent conversion landing. One job: send
- * the visitor to the real app sign-up. A short value recap + trust, then a
- * single primary CTA (sign-up itself lives in the app).
- */
 const recap = [
   "Free to start, no card, no trial timer",
-  "Snap receipts, send invoices, file MTD to HMRC",
-  "HMRC recognition coming soon · your data stays in the EU",
+  "Send invoices, log expenses, scan receipts on paid plans",
+  "MTD submissions to HMRC coming soon · your data stays in the EU",
 ];
 
 export function JoinPage() {

@@ -6,7 +6,7 @@ export function FreeInvoiceAppPage() {
       path="/free-invoice-app"
       eyebrow="Free invoicing"
       title="A free invoice app for UK sole traders"
-      lede="Send as many professional PDF invoices as you like, free, and see at a glance who has paid. When Making Tax Digital reaches you, upgrade without starting again."
+      lede="Send as many professional PDF invoices as you like, free, and see at a glance who has paid. Your records stay in one place, ready for when Ledgeraa’s MTD submissions arrive."
       ctaHeading="Send your first invoice in minutes."
       ctaBody="No card, no trial timer. Free is free, forever."
       related={[
@@ -21,7 +21,7 @@ export function FreeInvoiceAppPage() {
         <li>Plain-English notes on every field, so nothing on the invoice is guesswork.</li>
         <li>A clear view of what's been paid and what's still owed.</li>
         <li>Manual expense tracking.</li>
-        <li>Import your old records, and export your data any time.</li>
+        <li>Export your data any time.</li>
       </ul>
       <p>
         Free invoices carry a small Ledgeraa watermark. No card is needed to
@@ -36,7 +36,8 @@ export function FreeInvoiceAppPage() {
           ["Invoice templates", "1, watermarked", "3, customisable"],
           ["Recurring invoices and expenses", "No", "Yes"],
           ["Receipt scanning", "No", "Up to 2 scans per expense"],
-          ["Making Tax Digital submissions", "No", "Yes"],
+          ["Import from Excel or CSV", "No", "Yes"],
+          ["Making Tax Digital submissions", "No", "Coming soon"],
         ]}
         caption={<a href="/pricing">Full plan comparison</a>}
       />

@@ -39,7 +39,8 @@ export function FirstQuarterlyUpdatePage() {
       <p>
         Add every sale, invoice and expense for the period. In Ledgeraa you can
         snap receipts, log cash jobs as "other income", and import anything you
-        kept in a spreadsheet.
+        kept in a spreadsheet (receipt scanning, other income and import are on
+        Standard and Unlimited).
       </p>
 
       <h2>Step 4: Check the totals</h2>
@@ -64,10 +65,11 @@ export function FirstQuarterlyUpdatePage() {
 
       <h2>Doing it in Ledgeraa</h2>
       <p>
-        Ledgeraa guides you through each update with plain-English notes on
-        every field. Ledgeraa is pending inclusion on HMRC's list of recognised
-        MTD software, and submissions go live as soon as recognition is
-        complete. Full step-by-step guidance is on{" "}
+        MTD submissions in Ledgeraa are coming soon. Ledgeraa is pending
+        inclusion on HMRC's list of recognised MTD software, and can't send
+        updates to HMRC until that's complete. Until then, you can keep your
+        records in Ledgeraa ready for when it is. Full step-by-step guidance is
+        on{" "}
         <a href={GOV.stepByStep}>GOV.UK</a>.
       </p>
     </ContentLayout>

@@ -11,3 +11,5 @@ Graphic/
 
 # Local dev-server log
 dev.log
+test-results
+playwright-report

@@ -30,15 +30,15 @@ export function SwitchFromSpreadsheetsPage() {
         <li>Match your columns (date, description, amount, category) to ours, then import.</li>
       </ol>
       <p>
-        Importing is free on every plan, including Free, and you can export
-        everything again any time, in any date range.
+        Importing is on the Standard and Unlimited plans. You can export
+        everything again any time, in any date range, on every plan.
       </p>
 
       <h2>Why switch at all?</h2>
       <ul>
         <li>Snap a receipt instead of typing it in (Standard and Unlimited).</li>
         <li>Invoices, expenses and other income in one place, ready for your return.</li>
-        <li>A running tax estimate, rather than a surprise in January.</li>
+        <li>A running tax estimate, rather than a surprise in January (coming soon, with MTD).</li>
         <li>No broken formulas or totals drifting out of line.</li>
       </ul>
     </ContentLayout>

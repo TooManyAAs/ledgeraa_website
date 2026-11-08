@@ -13,12 +13,6 @@ import {
 import { HELLO_EMAIL, SIGNUP_URL } from "@/config/site";
 import { Seo } from "@/Seo";
 
-/**
- * ContactPage (/contact) - two jobs: point people to email us, and set honest
- * expectations (two founders, other jobs, replies as-soon-as-we-can). Urgent
- * questions get redirected to /support. Deliberately not a sales page and
- * deliberately no contact form - mailto only.
- */
 export function ContactPage() {
   return (
     <>
@@ -26,7 +20,6 @@ export function ContactPage() {
       <Nav current="/contact" />
 
       <main>
-        {/* Hero - quiet, no competing CTA */}
         <Section background="paper" spacing="lg">
           <Container width="narrow">
             <div className="text-center">
@@ -46,7 +39,6 @@ export function ContactPage() {
           </Container>
         </Section>
 
-        {/* Write to us - the primary action */}
         <Section background="canvas" spacing="base">
           <Container width="narrow">
             <div className="rounded-3xl bg-[var(--color-primary-50)] px-6 py-10 text-center ring-1 ring-[var(--color-primary-100)] md:px-12 md:py-14">
@@ -74,7 +66,6 @@ export function ContactPage() {
           </Container>
         </Section>
 
-        {/* About us - the human beat, sets fuller expectations */}
         <Section background="white" spacing="base" bordered>
           <Container width="narrow">
             <Heading level="display-md" as="h2" className="mb-8 text-center">
@@ -107,15 +98,12 @@ export function ContactPage() {
           </Container>
         </Section>
 
-        {/* Urgent -> Support */}
         <CtaBanner
-          tone="tinted"
           text="Need an answer right now? Our Support page has guides and resources for the most common questions."
           ctaLabel="Go to Support"
           ctaHref="/support"
         />
 
-        {/* Exit CTA - plain dark section (BigCta embeds a waitlist form, wrong here) */}
         <Section background="dark" spacing="lg">
           <Container width="narrow">
             <div className="text-center">

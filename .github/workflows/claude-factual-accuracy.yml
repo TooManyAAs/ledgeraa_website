@@ -1,0 +1,110 @@
+# .github/workflows/claude-factual-accuracy.yml
+#
+# Runs on a PR only when it carries the `ready-for-claude-review` label (and
+# manually via the Actions tab) — Claude checks that changed customer-facing text
+# is accurate about the app and about UK tax rules. Wired as a required status
+# check via branch protection; red when Claude's verdict is FAIL.
+#
+# The app repos (FE + BE) are checked out read-only (via the ledgeraa-actions-repo-reader
+# GitHub App) because the website describes behaviour implemented there.
+#
+# The report is ephemeral (written in the runner, shown in the job summary, never
+# committed). Claude also posts findings as PR comments where appropriate.
+
+name: Claude factual accuracy
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+  workflow_dispatch:
+
+concurrency:
+  group: claude-factual-accuracy-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FE_REPO: ledgeraa_fe
+  BE_REPO: ledgeraa_be
+
+jobs:
+  factual-accuracy:
+    # Only check a PR once it's labelled ready; manual dispatch always runs.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.pull_request.labels.*.name, 'ready-for-claude-review')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: write # post findings as PR comments
+      id-token: write # used by the Claude action for auth handshakes
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # no-PR runs diff against origin/main
+
+      - name: App repos token
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ vars.REPO_READER_CLIENT_ID }}
+          private-key: ${{ secrets.REPO_READER_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ env.FE_REPO }},${{ env.BE_REPO }}
+          permission-contents: read
+
+      - name: Check out frontend repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/${{ env.FE_REPO }}
+          token: ${{ steps.app-token.outputs.token }}
+          path: app-fe
+          persist-credentials: false
+
+      - name: Check out backend repo
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/${{ env.BE_REPO }}
+          token: ${{ steps.app-token.outputs.token }}
+          path: app-be
+          persist-credentials: false
+
+      - name: Report path
+        id: meta
+        run: echo "report=claude-reports/factual-accuracy/report-$(date -u +%y%m%d-%H%M).md" >> "$GITHUB_OUTPUT"
+
+      - name: Check with Claude
+        uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # gh CLI uses this to comment on the PR
+        with:
+          # Org-level secret, same as raise-ticket.yml.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Read and follow the instructions in `.github/prompts/factual-accuracy.md` exactly.
+
+            ## Request context
+            - REPORT_PATH: ${{ steps.meta.outputs.report }}
+            - BRANCH: ${{ github.head_ref || github.ref_name }}
+            - Repository: ${{ github.repository }}
+            - FE_PATH: app-fe
+            - BE_PATH: app-be
+          claude_args: |
+            --max-turns 40
+            --allowedTools "Read,Glob,Grep,Write,Bash(gh pr view:*),Bash(gh pr list:*),Bash(gh pr diff:*),Bash(gh pr comment:*),Bash(gh api:*),Bash(git diff:*),Bash(git log:*),WebFetch(domain:www.gov.uk),WebFetch(domain:developer.service.hmrc.gov.uk)"
+
+      - name: Publish report & gate
+        if: always()
+        env:
+          REPORT: ${{ steps.meta.outputs.report }}
+        run: |
+          if [ ! -f "$REPORT" ]; then
+            echo "No report produced — Claude step failed." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+          if grep -q '^VERDICT: FAIL' "$REPORT"; then
+            echo "::error::Claude flagged incorrect customer-facing claims — see the job summary."
+            exit 1
+          fi

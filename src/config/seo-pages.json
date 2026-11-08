@@ -19,8 +19,8 @@
   "pages": [
     {
       "path": "/",
-      "title": "MTD Bookkeeping App for UK Sole Traders | Ledgeraa",
-      "description": "Plain-English bookkeeping and Making Tax Digital app for UK sole traders. Snap receipts, send invoices and submit your MTD updates. Free to start, MTD from £4.99 a month.",
+      "title": "Bookkeeping App for UK Sole Traders, MTD Coming Soon | Ledgeraa",
+      "description": "Plain-English bookkeeping for UK sole traders. Send invoices, log expenses and snap receipts, with Making Tax Digital submissions coming soon. Free to start, Standard £4.99 a month.",
       "changefreq": "weekly",
       "priority": "1.0",
       "schema": [
@@ -31,7 +31,7 @@
     {
       "path": "/pricing",
       "title": "Pricing: Free, £4.99 or £7.99 a Month | Ledgeraa",
-      "description": "Free plan with unlimited invoices. Standard at £4.99 a month adds MTD submissions, receipt scanning and other income.",
+      "description": "Free plan with unlimited invoices. Standard at £4.99 a month adds receipt scanning, other income and import, with MTD submissions coming soon.",
       "changefreq": "weekly",
       "priority": "0.9",
       "schema": [
@@ -76,14 +76,14 @@
     {
       "path": "/free-invoice-app",
       "title": "Free Invoice App for UK Sole Traders | Ledgeraa",
-      "description": "Send unlimited professional PDF invoices for free. Ledgeraa's Free plan is built for UK sole traders, with an easy upgrade to Making Tax Digital.",
+      "description": "Send unlimited professional PDF invoices for free. Ledgeraa's Free plan is built for UK sole traders, with Making Tax Digital submissions coming soon on paid plans.",
       "changefreq": "monthly",
       "priority": "0.8"
     },
     {
       "path": "/switch-from-spreadsheets",
       "title": "Switch from Spreadsheets to Bookkeeping Software | Ledgeraa",
-      "description": "Moving from Excel or Google Sheets? Import your invoices, sales and expenses as CSV or Excel files and get ready for Making Tax Digital.",
+      "description": "Moving from Excel or Google Sheets? Import your invoices, sales and expenses as CSV or Excel files on Standard and Unlimited, and get ready for Making Tax Digital.",
       "changefreq": "monthly",
       "priority": "0.7"
     },

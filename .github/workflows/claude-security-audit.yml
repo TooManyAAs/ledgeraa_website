@@ -1,0 +1,72 @@
+# .github/workflows/claude-security-audit.yml
+#
+# Runs on a PR only when it carries the `ready-for-claude-review` label (and
+# manually via the Actions tab) — Claude security audit. Wired as a required
+# status check via branch protection; red when Claude's verdict is FAIL.
+#
+# The report is ephemeral (written in the runner, shown in the job summary, never
+# committed). Claude also posts findings as PR comments where appropriate.
+
+name: Claude security audit
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+  workflow_dispatch:
+
+concurrency:
+  group: claude-security-audit-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  security-audit:
+    # Only audit a PR once it's labelled ready; manual dispatch always runs.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.pull_request.labels.*.name, 'ready-for-claude-review')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: write # post findings as PR comments
+      id-token: write # used by the Claude action for auth handshakes
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Report path
+        id: meta
+        run: echo "report=claude-reports/security-audit/report-$(date -u +%y%m%d-%H%M).md" >> "$GITHUB_OUTPUT"
+
+      - name: Audit with Claude
+        uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # gh CLI uses this to comment on the PR
+        with:
+          # Org-level secret, same as raise-ticket.yml.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            Read and follow the instructions in `.github/prompts/security-audit.md` exactly.
+
+            ## Request context
+            - REPORT_PATH: ${{ steps.meta.outputs.report }}
+            - BRANCH: ${{ github.head_ref || github.ref_name }}
+            - Repository: ${{ github.repository }}
+          claude_args: |
+            --max-turns 40
+            --allowedTools "Read,Glob,Grep,Write,Bash(gh pr view:*),Bash(gh pr list:*),Bash(gh pr diff:*),Bash(gh pr comment:*),Bash(gh api:*)"
+
+      - name: Publish report & gate
+        if: always()
+        env:
+          REPORT: ${{ steps.meta.outputs.report }}
+        run: |
+          if [ ! -f "$REPORT" ]; then
+            echo "No report produced — Claude step failed." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+          if grep -q '^VERDICT: FAIL' "$REPORT"; then
+            echo "::error::Claude flagged blocking security issues — see the job summary."
+            exit 1
+          fi

@@ -16,18 +16,15 @@ export function FaqAccordion({
   eyebrow = "Common questions",
   heading = "Frequently Asked Questions",
   items,
-  background = "canvas-cool",
   illustration,
 }: {
   eyebrow?: string;
   heading?: string;
   items: FaqEntry[];
-  background?: "canvas" | "canvas-cool" | "white";
-  /** Optional decorative art rendered under the header (e.g. an Illustration). */
   illustration?: ReactNode;
 }) {
   return (
-    <Section background={background} spacing="base" bordered>
+    <Section background="white" spacing="base" bordered>
       <Container width="narrow">
         <div className="text-center mb-10">
           <Eyebrow>{eyebrow}</Eyebrow>

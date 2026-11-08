@@ -30,11 +30,8 @@ const variants: Record<Variant, string> = {
 };
 
 const sizes: Record<Size, string> = {
-  // 44px - for inline secondary actions
   sm: "h-11 px-4 text-sm",
-  // 52px - default body button
   md: "h-[52px] px-5 text-base",
-  // 60px - hero CTA
   lg: "h-[60px] px-7 text-base",
 };
 
@@ -42,9 +39,7 @@ type CommonProps = {
   variant?: Variant;
   size?: Size;
   block?: boolean;
-  /** Optional leading icon. */
   leading?: ReactNode;
-  /** Optional trailing icon (defaults to a quiet arrow on primary CTAs). */
   trailing?: ReactNode;
   className?: string;
   children: ReactNode;
@@ -62,13 +57,7 @@ type ButtonAsAnchor = CommonProps &
 
 type ButtonProps = ButtonAsButton | ButtonAsAnchor;
 
-/**
- * Button - primary visual primitive for action.
- *
- * Three variants, three sizes. Renders as <a> when `href` is provided,
- * otherwise <button>. Respects `prefers-reduced-motion` via the global
- * motion-suppressor in globals.css.
- */
+/** Renders an <a> when `href` is given, otherwise a <button>. */
 export function Button(props: ButtonProps) {
   const {
     variant = "primary",

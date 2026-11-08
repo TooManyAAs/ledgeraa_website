@@ -122,10 +122,10 @@ export function TradePage({ slug }: { slug: string }) {
 
       <h2>How Ledgeraa helps</h2>
       <ul>
-        <li>Snap a receipt and the details are filled in for you.</li>
-        <li>Log cash jobs as "other income" as soon as they happen.</li>
+        <li>Snap a receipt and the details are filled in for you (Standard and Unlimited).</li>
+        <li>Log cash jobs as "other income" as soon as they happen (Standard and Unlimited).</li>
         <li>Plain-English notes on every field, so you know what goes where.</li>
-        <li>Quarterly updates guided in-app, with reminders before each deadline.</li>
+        <li>Coming soon: quarterly updates guided in-app, with reminders before each deadline.</li>
       </ul>
       <p>
         Mileage tracking is coming soon. <a href={GOV.simplifiedExpenses}>HMRC's simplified expenses guide</a>{" "}

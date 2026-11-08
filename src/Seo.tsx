@@ -1,12 +1,8 @@
 import seo from "@/config/seo-pages.json";
 
 /**
- * Seo - per-page <title>, description, canonical and social tags.
- *
- * React 19 hoists these elements into <head> on the client. The same values
- * are written into each route's static HTML at build time by
- * scripts/build-pages.mjs, so crawlers that don't run JavaScript still see
- * them. Edit titles and descriptions in src/config/seo-pages.json only.
+ * Per-page head tags (React 19 hoists them into <head>). build-pages.mjs writes
+ * the same values into each static HTML file. Edit them in seo-pages.json.
  */
 export function Seo({ path }: { path?: string }) {
   const page = seo.pages.find((p) => p.path === path);

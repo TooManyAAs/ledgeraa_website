@@ -11,11 +11,6 @@ import {
 } from "@ds/primitives";
 import { Seo } from "@/Seo";
 
-/**
- * NotFoundPage (catch-all `*`) - shown for any unknown URL. Reuses the branded
- * 404 illustration; the artwork carries the "404", the copy carries the meaning.
- * Single CTA back to the homepage - a clean dead-end, not a sales page.
- */
 export function NotFoundPage() {
   return (
     <>
