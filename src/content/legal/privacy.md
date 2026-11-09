@@ -1,4 +1,4 @@
-**Version 1.0 · Effective 1 November 2026**
+**Version 1.1 · Effective 9 November 2026**
 
 This Privacy Policy explains how Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) collects and uses personal data. It covers the Ledgeraa website at ledgeraa.com and the Ledgeraa application (together, the **"Service"**), and sets out your rights under data protection law. In this Privacy Policy:
 
@@ -122,7 +122,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 4.2 **Provision of personal data.** We require your account details in order to provide the Service. HMRC requires your National Insurance number, Unique Taxpayer Reference and fraud-prevention information for Submissions under Making Tax Digital. If you do not provide them, you may continue to keep records in the Service, but you will be unable to make Submissions.
 
-4.3 **Marketing Communications.** We shall not send you Marketing Communications unless you have opted in. You may unsubscribe at any time by using the link in any Marketing Communication or by changing your settings in the Service. After you unsubscribe, we keep your email address on a suppression list solely to ensure that we do not contact you again. Unsubscribing does not stop Service Communications, which form part of the Service under clause 19.4 of the Terms.
+4.3 **Marketing Communications.** We shall not send you Marketing Communications unless you have opted in. You may unsubscribe at any time by using the link in any Marketing Communication or by emailing hello@ledgeraa.com. Unsubscribing does not stop Service Communications, which form part of the Service under clause 19.4 of the Terms.
 
 ## 5. Automated processing
 
@@ -184,14 +184,13 @@ Where we have no contract with such an individual, we rely on our legitimate int
 | HMRC access tokens | Until you disconnect the Service from HMRC, delete your Account, or HMRC's 18-month authority expires | To connect to HMRC |
 | Logs of requests to HMRC, including fraud-prevention information | 7 days | Security and fraud prevention |
 | Device identifier | In your browser until you clear your browser data | HMRC fraud-prevention requirements |
-| Verification codes | [One hour], or until used | Account security |
+| Verification codes | One hour, or until used | Account security |
 | Data export files | 7 days, after which the download link expires | To let you retrieve your records |
 | Our billing records | Six years from the end of the financial year to which they relate | Tax and company law record-keeping requirements |
 | Records of Submissions made through the Service (type, period, date and HMRC reference, with no names or amounts) | Six years and three months from the date of the Submission | To answer queries from HMRC or from you about Submissions, and to establish or defend legal claims |
 | Support correspondence | Two years from our last contact with you | To handle follow-up enquiries |
 | Records of rights requests and complaints | Three years from closure of the request or complaint | To demonstrate compliance with data protection law |
-| Records of marketing consent | While you remain subscribed to Marketing Communications, and two years after you unsubscribe | To demonstrate consent |
-| Marketing suppression list (email address only) | For as long as needed to ensure that we do not send you Marketing Communications | To respect your choice |
+| Records of marketing consent | Until your Account is deleted | To demonstrate consent |
 | Server and security logs | 90 days | Security |
 | Accounts on the Free Plan with no sign-in for two years | Closed and deleted, after not less than 30 days' notice by email | Data minimisation |
 
@@ -247,7 +246,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 
 ## 11. Complaints
 
-11.1 **Complaints to us.** You may complain to us about our processing of your personal data by emailing privacy@ledgeraa.com [or by using our online complaints form at URL]. Complaints sent to hello@ledgeraa.com shall be treated in the same way. We shall:
+11.1 **Complaints to us.** You may complain to us about our processing of your personal data by emailing privacy@ledgeraa.com. Complaints sent to hello@ledgeraa.com shall be treated in the same way. We shall:
 
 (a) acknowledge your complaint within 5 Business Days, and in any event within 30 days of receipt;
 
