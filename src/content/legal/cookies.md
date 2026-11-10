@@ -1,6 +1,6 @@
 **Version 1.0 · Effective 1 November 2026**
 
-This Cookie Policy explains how Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) uses cookies and similar technologies on the website at ledgeraa.com and in the Ledgeraa application (together, the **"Service"**). It should be read together with our Privacy Policy and our Terms of Service.
+This Cookie Policy explains how Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) uses cookies and similar technologies on the website at ledgeraa.com and in the Ledgeraa application (together, the **"Service"**). It should be read together with our Privacy Policy and our Terms and Conditions.
 
 ## 1. Definitions and interpretation
 
@@ -20,7 +20,7 @@ This Cookie Policy explains how Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"**
 
 **"Technologies"** means Cookies, Local Storage, Session Storage, and any other technology that stores information on, or accesses information from, your device.
 
-**"Terms"** means our Terms of Service, published at ledgeraa.com/terms.
+**"Terms"** means our Terms and Conditions, published at ledgeraa.com/terms.
 
 1.2 Other capitalised terms used in this Cookie Policy, including "Account", "Paid Plan" and "Submission", have the meanings given in the Terms.
 

@@ -2,7 +2,7 @@
 
 This Privacy Policy explains how Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) collects and uses personal data. It covers the Ledgeraa website at ledgeraa.com and the Ledgeraa application (together, the **"Service"**), and sets out your rights under data protection law. In this Privacy Policy:
 
-- **"Terms"** means our [Terms of Service](https://www.ledgeraa.com/terms);
+- **"Terms"** means our [Terms and Conditions](https://www.ledgeraa.com/terms);
 - **"Customer Data"** means the records you store in the Service; and
 - other capitalised terms have the meanings given in the Terms.
 

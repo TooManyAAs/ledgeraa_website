@@ -31,7 +31,7 @@
     {
       "path": "/pricing",
       "title": "Pricing: Free, £4.99 or £7.99 a Month | Ledgeraa",
-      "description": "Free plan with unlimited invoices. Standard at £4.99 a month adds receipt scanning, other income and import, with MTD submissions coming soon.",
+      "description": "Free plan with unlimited invoices. Standard at £4.99 a month adds receipt scanning, imports and recurring records, with MTD submissions coming soon.",
       "changefreq": "weekly",
       "priority": "0.9",
       "schema": [
@@ -152,7 +152,7 @@
     },
     {
       "path": "/terms",
-      "title": "Terms of Service | Ledgeraa",
+      "title": "Terms and Conditions | Ledgeraa",
       "description": "The terms that apply when you use Ledgeraa.",
       "changefreq": "yearly",
       "priority": "0.3"
