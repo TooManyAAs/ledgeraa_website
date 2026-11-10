@@ -18,7 +18,7 @@ const LEDGERAA = {
   price: "Free; Standard £4.99 a month; Unlimited £7.99 a month",
   free: "Yes: unlimited invoices and manual expenses (no MTD)",
   mtd: "Coming soon, on Standard and Unlimited (HMRC recognition pending)",
-  vat: "VAT returns coming soon, on Standard and Unlimited",
+  vat: "VAT returns coming soon, on Unlimited",
   bank: "Coming soon",
   receipts: "Standard: up to 2 scans per expense. Unlimited: up to 20",
 };

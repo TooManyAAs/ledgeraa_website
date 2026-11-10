@@ -12,7 +12,7 @@ This page is published by Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **
 
 1.1 In this page, **"DPA"** means our Data Processing Agreement, published at ledgeraa.com/dpa.
 
-1.2 Other capitalised terms used in this page, including "Customer Personal Data" and "Sub-processor", have the meanings given in the DPA or, where not defined in the DPA, in our Terms of Service (the **"Terms"**).
+1.2 Other capitalised terms used in this page, including "Customer Personal Data" and "Sub-processor", have the meanings given in the DPA or, where not defined in the DPA, in our Terms and Conditions (the **"Terms"**).
 
 ## 2. Part A: Sub-processors
 

@@ -43,7 +43,9 @@ const pricingFaqs: FaqEntry[] = [
     question: "Can I switch plans later?",
     answer: (
       <>
-        Any time, in a couple of taps. Changes take effect straight away.
+        Any time, in a couple of taps. Moving between Standard and Unlimited
+        takes effect straight away. Moving to Free takes effect at the end of
+        your billing period.
       </>
     ),
   },
