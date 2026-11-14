@@ -63,7 +63,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 | HMRC information | HMRC business identifiers, obligations and deadlines, tax calculations, Submission receipts and statuses, the access tokens that connect the Service to HMRC, and any liabilities, payments and previous Submissions that HMRC makes available | HMRC, once you connect the Service |
 | Fraud-prevention information | The information HMRC requires with each request, as described in clause 3.2 | Your device and connection, and our servers |
 | Billing | Plan and billing history, and the card brand, last four digits and expiry date of your card. Full card details are held by Stripe and are not accessible to us. | Stripe, using the payment details you provide to it |
-| Support and feedback | Correspondence and feedback you send to us, and our replies | You |
+| Support and feedback | Correspondence and feedback you send to us, and our replies. If you answer the in-app feedback prompt, your rating, any comment you add and the page of the Service you were on | You |
 | Technical and security | Server and security logs from the Service and our website, including IP address, browser type, requests made and errors | Your device |
 
 3.2 **Fraud-prevention information.** HMRC requires Making Tax Digital software to send information about the user's device and connection with each request to HMRC. In accordance with HMRC's specification, this includes:
@@ -189,6 +189,7 @@ Where we have no contract with such an individual, we rely on our legitimate int
 | Our billing records | Six years from the end of the financial year to which they relate | Tax and company law record-keeping requirements |
 | Records of Submissions made through the Service (type, period, date and HMRC reference, with no names or amounts) | Six years and three months from the date of the Submission | To answer queries from HMRC or from you about Submissions, and to establish or defend legal claims |
 | Support correspondence | Two years from our last contact with you | To handle follow-up enquiries |
+| Answers to the in-app feedback prompt | Until your Account is deleted | To improve the Service |
 | Records of rights requests and complaints | Three years from closure of the request or complaint | To demonstrate compliance with data protection law |
 | Records of marketing consent | Until your Account is deleted | To demonstrate consent |
 | Server and security logs | 90 days | Security |
