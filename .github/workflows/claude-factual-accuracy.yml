@@ -39,7 +39,7 @@ jobs:
       pull-requests: write # post findings as PR comments
       id-token: write # used by the Claude action for auth handshakes
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0 # no-PR runs diff against origin/main
 
@@ -54,7 +54,7 @@ jobs:
           permission-contents: read
 
       - name: Check out frontend repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: ${{ github.repository_owner }}/${{ env.FE_REPO }}
           token: ${{ steps.app-token.outputs.token }}
@@ -62,7 +62,7 @@ jobs:
           persist-credentials: false
 
       - name: Check out backend repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: ${{ github.repository_owner }}/${{ env.BE_REPO }}
           token: ${{ steps.app-token.outputs.token }}

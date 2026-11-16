@@ -11,7 +11,7 @@ export type LegalPage = { href: string; label: string; title: string; source: st
 
 /** Every legal page, in display order: drives the routes, the footer and the cross-links. */
 export const LEGAL_PAGES: LegalPage[] = [
-  { href: "/terms", label: "Terms of Service", title: "Terms of Service", source: terms },
+  { href: "/terms", label: "Terms and Conditions", title: "Terms and Conditions", source: terms },
   { href: "/privacy", label: "Privacy Policy", title: "Privacy Policy", source: privacy },
   { href: "/cookies", label: "Cookie Policy", title: "Cookie Policy", source: cookies },
   { href: "/data-processing", label: "Data Processing Agreement", title: "Data Processing Agreement", source: dataProcessing },

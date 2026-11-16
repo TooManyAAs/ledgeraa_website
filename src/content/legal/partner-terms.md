@@ -20,7 +20,7 @@ These Partner Terms are made between Ledgeraa LTD, a company registered in Engla
 
 **"Partner Personnel"** means your partners, directors, employees, contractors and any other individuals who use the Service on your behalf.
 
-**"Terms"** means the Ledgeraa Terms of Service, published at ledgeraa.com/terms.
+**"Terms"** means the Ledgeraa Terms and Conditions, published at ledgeraa.com/terms.
 
 1.2 Other capitalised terms used in these Partner Terms have the meanings given in the Terms.
 

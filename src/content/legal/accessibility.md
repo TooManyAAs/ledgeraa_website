@@ -8,7 +8,7 @@ Ledgeraa LTD (**"Ledgeraa"**, **"we"**, **"us"** or **"our"**) is committed to e
 
 1.2 As a provider of services to the public, Ledgeraa is subject to the duty to make reasonable adjustments for disabled people under the Equality Act 2010 and, in Northern Ireland, the Disability Discrimination Act 1995.
 
-1.3 This statement is provided for information only. It does not form part of our Terms of Service (the **"Terms"**) and does not create any obligation, warranty or representation in addition to them. Nothing in this statement limits any right you have under the legislation referred to in clause 1.2.
+1.3 This statement is provided for information only. It does not form part of our Terms and Conditions (the **"Terms"**) and does not create any obligation, warranty or representation in addition to them. Nothing in this statement limits any right you have under the legislation referred to in clause 1.2.
 
 1.4 Capitalised terms used in this statement and not defined in it have the meanings given in the Terms.
 

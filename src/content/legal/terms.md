@@ -1,4 +1,4 @@
-**Version 1.0 · Effective 1 November 2026**
+**Version 1.1 · Effective 9 November 2026**
 
 > **Key points.** This box highlights some important terms. It does not form part of the Terms, and the full Terms below prevail.
 >
@@ -175,26 +175,22 @@ You are responsible for all activity carried out through your Account.
 - (d) **Elsewhere in these Terms:** as expressly provided in clauses 6.4, 7.12, 12.2, 16.3, 16.5, 20.1 and 22.6, and in clause 4.2(b) of the DPA; and
 - (e) **By law:** where required by law.
 
-Otherwise, Fees for a renewal are not refundable once the new Billing Period has begun. Ledgeraa shall send you a reminder by email not less than [14] days before each annual renewal, stating the renewal date and the Fees payable.
+Otherwise, Fees for a renewal are not refundable once the new Billing Period has begun.
 
 6.3 **Serious Fault.** A "Serious Fault" means a fault in the Service, within Ledgeraa's reasonable control, that prevents you from using the features of your Paid Plan either for more than 72 consecutive hours, or for more than 24 hours in aggregate during the 7 days before an HMRC Deadline that applies to you. It does not include unavailability caused by HMRC, a Third-Party Service, a Force Majeure Event, or planned maintenance notified in advance.
 
-6.4 **Consumer cancellation right.** If you are a Consumer, you may cancel a new Paid Plan within 14 days of purchase.
-
-- (a) At checkout, you will be asked to expressly request that your Paid Plan begins immediately.
-- (b) If you make that request and then cancel within the 14 days, Ledgeraa shall refund the Fees paid, less a proportionate amount for the period before you cancelled.
-- (c) Where clause 6.2 is more favourable to you, clause 6.2 applies.
+6.4 **Consumer cancellation right.** If you are a Consumer, you may cancel a new Paid Plan within 14 days of purchase and receive a full refund of the Fees paid. Where clause 6.2 is more favourable to you, clause 6.2 applies.
 
 6.5 **Closing your Account.** You may delete your Account in Settings at any time.
 
-- (a) Before you can request deletion, you must either download a full export of your Customer Data or expressly confirm that you do not require one. You must also acknowledge that Ledgeraa will not retain any copy after deletion, and that you remain responsible for keeping your records for the periods HMRC requires. The 7-day period in clause 6.5(b) begins only once you have done so.
+- (a) Before you can request deletion, you must either request a full export of your Customer Data (sent to you by email) or expressly confirm that you do not require one. You must also acknowledge that Ledgeraa will not retain any copy after deletion, and that you remain responsible for keeping your records for the periods HMRC requires. The 7-day period in clause 6.5(b) begins only once you have done so.
 - (b) Deletion takes place 7 days after your request. Signing in to your Account during that period cancels the deletion.
 - (c) After 7 days, Ledgeraa will permanently delete your Account and all Customer Data, including records previously submitted to HMRC.
 - (d) Copies held in backups are deleted when those backups expire, within 7 days.
 - (e) Ledgeraa retains only:
   - its own billing records, for six years;
   - a record of each Submission made through the Service, showing its type, period, date and HMRC reference but no names or amounts, for six years and three months;
-  - support correspondence, for two years; records of data protection requests and complaints, for three years; records of marketing consent and a marketing suppression list; and
+  - support correspondence, for two years; records of data protection requests and complaints, for three years; and
   - information reasonably required to establish or defend legal claims, or to prevent or investigate fraud,
 
   as described in the Privacy Policy.
@@ -209,7 +205,7 @@ Otherwise, Fees for a renewal are not refundable once the new Billing Period has
 
 Connection to HMRC and the making of Submissions are not yet available. Until they are, the Service sends no information to HMRC. Ledgeraa shall notify you by email, or by notice within the Service, when they become available.
 
-[Ledgeraa is listed by HMRC as recognised software for Making Tax Digital.] HMRC does not endorse or recommend any software product.
+HMRC does not endorse or recommend any software product.
 
 7.2 **Authorisation.** You authorise the Service on HMRC's own sign-in page.
 
@@ -508,14 +504,14 @@ Suspension may take immediate effect where reasonably necessary. Where lawful an
 
 - (a) verification codes, security alerts and notices of suspected unauthorised access;
 - (b) notices about the status, suspension or closure of your Account;
-- (c) payment confirmations, notices of failed payments, renewal reminders and notices of changes to Fees;
+- (c) payment confirmations, notices of failed payments and notices of changes to Fees;
 - (d) notices about your connection to HMRC, its expiry and the status of your Submissions;
 - (e) reminders of HMRC Deadlines and other notices generated by features of the Service;
 - (f) notices of changes to the Service, these Terms, the DPA or the Privacy Policy;
 - (g) replies to your enquiries and complaints; and
 - (h) any other notice that Ledgeraa is required by law to give you.
 
-19.4 **No opt-out from Service Communications.** Service Communications form part of the Service. You may not opt out of them while your Account remains open, save that you may turn off the reminders described in clause 19.3(e) in Settings. Withdrawing your consent to Marketing Communications does not affect them. Ledgeraa shall not include promotional content in any Service Communication.
+19.4 **No opt-out from Service Communications.** Service Communications form part of the Service. You may not opt out of them while your Account remains open. Withdrawing your consent to Marketing Communications does not affect them. Ledgeraa shall not include promotional content in any Service Communication.
 
 19.5 **Marketing Communications.** Ledgeraa shall send you Marketing Communications only if you have consented to receive them. You may withdraw your consent at any time, free of charge, as described in clause 4.3 of the Privacy Policy. Withdrawing your consent does not affect your Account, your Plan or the Service.
 

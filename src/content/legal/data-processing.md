@@ -1,6 +1,6 @@
 **Version 1.0 · Effective 1 November 2026**
 
-This Data Processing Agreement (the **"DPA"**) forms part of the agreement between you and Ledgeraa LTD (**"Ledgeraa"**) under the [Ledgeraa Terms of Service](https://www.ledgeraa.com/terms) (the **"Terms"**). It applies where Ledgeraa processes Customer Personal Data on your behalf in providing the Service, and sets out the terms required by Article 28(3) of the UK GDPR. You accept this DPA by accepting the Terms, and no separate signature is required.
+This Data Processing Agreement (the **"DPA"**) forms part of the agreement between you and Ledgeraa LTD (**"Ledgeraa"**) under the [Ledgeraa Terms and Conditions](https://www.ledgeraa.com/terms) (the **"Terms"**). It applies where Ledgeraa processes Customer Personal Data on your behalf in providing the Service, and sets out the terms required by Article 28(3) of the UK GDPR. You accept this DPA by accepting the Terms, and no separate signature is required.
 
 ## 1. Definitions and interpretation
 

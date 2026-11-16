@@ -39,8 +39,8 @@ export function FirstQuarterlyUpdatePage() {
       <p>
         Add every sale, invoice and expense for the period. In Ledgeraa you can
         snap receipts, log cash jobs as "other income", and import anything you
-        kept in a spreadsheet (receipt scanning, other income and import are on
-        Standard and Unlimited).
+        kept in a spreadsheet (receipt scanning and import are on Standard and
+        Unlimited).
       </p>
 
       <h2>Step 4: Check the totals</h2>

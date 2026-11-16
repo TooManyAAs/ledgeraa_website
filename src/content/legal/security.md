@@ -6,7 +6,7 @@ The Ledgeraa Service holds users' tax identifiers, financial records and a conne
 
 1.1 This page is provided for information only. It describes, in general terms, the technical and organisational measures that Ledgeraa has in place at the date shown above.
 
-1.2 This page does not form part of our Terms of Service (the **"Terms"**) or our Data Processing Agreement (the **"DPA"**), and does not create any obligation, warranty or representation in addition to them. Ledgeraa's contractual commitments on security are set out in the Terms and in Annex 2 to the DPA.
+1.2 This page does not form part of our Terms and Conditions (the **"Terms"**) or our Data Processing Agreement (the **"DPA"**), and does not create any obligation, warranty or representation in addition to them. Ledgeraa's contractual commitments on security are set out in the Terms and in Annex 2 to the DPA.
 
 1.3 No method of transmitting or storing data is completely secure. Ledgeraa cannot guarantee that data will never be subject to unauthorised access, loss or disclosure. Nothing in this clause limits any liability that cannot be limited or excluded by law, or affects your statutory rights.
 

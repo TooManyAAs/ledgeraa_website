@@ -77,7 +77,10 @@ function headFor({ title, description, url, schema = [] }) {
     `<meta data-static-head property="og:description" content="${esc(description)}" />`,
     `<meta data-static-head property="og:url" content="${esc(url)}" />`,
     `<meta data-static-head property="og:image" content="${esc(image)}" />`,
+    `<meta data-static-head property="og:image:width" content="1200" />`,
+    `<meta data-static-head property="og:image:height" content="630" />`,
     `<meta data-static-head name="twitter:card" content="summary_large_image" />`,
+    `<meta data-static-head name="twitter:image" content="${esc(image)}" />`,
   ];
   for (const s of schema) {
     const data = s === "organization" ? organization : s === "software" ? software : null;
